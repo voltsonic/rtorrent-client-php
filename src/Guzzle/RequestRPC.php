@@ -59,6 +59,8 @@ class RequestRPC {
                 :$configureTempDirectorySrc;
             if(!file_exists($this->tempDir)) mkdir($this->tempDir, 0777, true);
         }
+
+        $this->guzzleReset();
     }
     public function guzzleReset(): RequestRPC
     {
