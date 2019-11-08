@@ -18,6 +18,7 @@
   "homepage": "https://github.com/voltsonic/rtorrent-client-php#readme",
   "devDependencies": {
     "badge-management": "^1.0.2",
+    "request": "^2.88.0",
     "version-management": "^1.0.7"
   },
   "badges": {
