@@ -15,13 +15,14 @@ let flushItem = (header, commands, final = false) => {
         let headerKey = header.toLowerCase();
         if(skipHeaders.indexOf(headerKey) < 0){
             let info = {
-                header
+                header,
+                attributes: {}
             };
             for(let command of commands){
                 let type = command.type.toLowerCase();
-                if(!info.hasOwnProperty(type))
-                    info[type] = [];
-                info[type].push(command);
+                if(!info.attributes.hasOwnProperty(type))
+                    info.attributes[type] = [];
+                info.attributes[type].push(command);
             }
             items[header.toLowerCase()] = info;
             if(final){

@@ -1,2941 +1,2983 @@
 {
   "misc": {
     "header": "Misc",
-    "command": [
-      {
-        "command": "encoding.add",
-        "deprecatedCommands": [
-          "encoding_list"
-        ],
-        "description": "Configure filename encodings",
-        "type": "Command"
-      },
-      {
-        "command": "keys.layout.set",
-        "deprecatedCommands": [
-          "key_layout"
-        ],
-        "description": "Define keyboard layout for key bindings `<qwerty\\|azerty\\|qwertz\\|dvorak>`",
-        "type": "Command"
-      }
-    ],
-    "cli": [
-      {
-        "command": "import",
-        "deprecatedCommands": [
-          ""
-        ],
-        "description": "Import a config file (use from CLI and `-o`)",
-        "type": "CLI"
-      }
-    ]
+    "attributes": {
+      "command": [
+        {
+          "command": "encoding.add",
+          "deprecatedCommands": [
+            "encoding_list"
+          ],
+          "description": "Configure filename encodings",
+          "type": "Command"
+        },
+        {
+          "command": "keys.layout.set",
+          "deprecatedCommands": [
+            "key_layout"
+          ],
+          "description": "Define keyboard layout for key bindings `<qwerty\\|azerty\\|qwertz\\|dvorak>`",
+          "type": "Command"
+        }
+      ],
+      "cli": [
+        {
+          "command": "import",
+          "deprecatedCommands": [
+            ""
+          ],
+          "description": "Import a config file (use from CLI and `-o`)",
+          "type": "CLI"
+        }
+      ]
+    }
   },
   "execution": {
     "header": "Execution",
-    "command": [
-      {
-        "command": "execute2",
-        "deprecatedCommands": [
-          "execute"
-        ],
-        "description": "See [COMMAND Execute](https://github.com/rakshasa/rtorrent/wiki/COMMAND-Execute) -- Tilde gets special treatment",
-        "type": "Command"
-      },
-      {
-        "command": "execute.throw",
-        "deprecatedCommands": [
-          "execute_throw"
-        ],
-        "description": "Same as above",
-        "type": "Command"
-      },
-      {
-        "command": "execute.throw.bg",
-        "deprecatedCommands": [
-          ""
-        ],
-        "description": "Same as above but run the command in the background",
-        "type": "Command"
-      },
-      {
-        "command": "execute.nothrow",
-        "deprecatedCommands": [
-          "execute_nothrow"
-        ],
-        "description": "See [COMMAND Execute](https://github.com/rakshasa/rtorrent/wiki/COMMAND-Execute)",
-        "type": "Command"
-      },
-      {
-        "command": "execute.nothrow.bg",
-        "deprecatedCommands": [
-          ""
-        ],
-        "description": "Same as above but run the command in the background",
-        "type": "Command"
-      },
-      {
-        "command": "execute.capture",
-        "deprecatedCommands": [
-          "execute_capture"
-        ],
-        "description": "See [COMMAND Execute](https://github.com/rakshasa/rtorrent/wiki/COMMAND-Execute)",
-        "type": "Command"
-      },
-      {
-        "command": "execute.capture_nothrow",
-        "deprecatedCommands": [
-          "execute_capture_nothrow"
-        ],
-        "description": "Same as above",
-        "type": "Command"
-      },
-      {
-        "command": "execute.raw",
-        "deprecatedCommands": [
-          "execute_raw"
-        ],
-        "description": "See [COMMAND Execute](https://github.com/rakshasa/rtorrent/wiki/COMMAND-Execute) -- Tilde does not get special treatment",
-        "type": "Command"
-      },
-      {
-        "command": "execute.raw.bg",
-        "deprecatedCommands": [
-          ""
-        ],
-        "description": "Same as above but run the command in the background",
-        "type": "Command"
-      },
-      {
-        "command": "execute.raw_nothrow",
-        "deprecatedCommands": [
-          "execute_raw_nothrow"
-        ],
-        "description": "[COMMAND Execute](https://github.com/rakshasa/rtorrent/wiki/COMMAND-Execute)",
-        "type": "Command"
-      },
-      {
-        "command": "execute.raw_nothrow.bg",
-        "deprecatedCommands": [
-          ""
-        ],
-        "description": "Same as above but run the command in the background",
-        "type": "Command"
-      }
-    ]
+    "attributes": {
+      "command": [
+        {
+          "command": "execute2",
+          "deprecatedCommands": [
+            "execute"
+          ],
+          "description": "See [COMMAND Execute](https://github.com/rakshasa/rtorrent/wiki/COMMAND-Execute) -- Tilde gets special treatment",
+          "type": "Command"
+        },
+        {
+          "command": "execute.throw",
+          "deprecatedCommands": [
+            "execute_throw"
+          ],
+          "description": "Same as above",
+          "type": "Command"
+        },
+        {
+          "command": "execute.throw.bg",
+          "deprecatedCommands": [
+            ""
+          ],
+          "description": "Same as above but run the command in the background",
+          "type": "Command"
+        },
+        {
+          "command": "execute.nothrow",
+          "deprecatedCommands": [
+            "execute_nothrow"
+          ],
+          "description": "See [COMMAND Execute](https://github.com/rakshasa/rtorrent/wiki/COMMAND-Execute)",
+          "type": "Command"
+        },
+        {
+          "command": "execute.nothrow.bg",
+          "deprecatedCommands": [
+            ""
+          ],
+          "description": "Same as above but run the command in the background",
+          "type": "Command"
+        },
+        {
+          "command": "execute.capture",
+          "deprecatedCommands": [
+            "execute_capture"
+          ],
+          "description": "See [COMMAND Execute](https://github.com/rakshasa/rtorrent/wiki/COMMAND-Execute)",
+          "type": "Command"
+        },
+        {
+          "command": "execute.capture_nothrow",
+          "deprecatedCommands": [
+            "execute_capture_nothrow"
+          ],
+          "description": "Same as above",
+          "type": "Command"
+        },
+        {
+          "command": "execute.raw",
+          "deprecatedCommands": [
+            "execute_raw"
+          ],
+          "description": "See [COMMAND Execute](https://github.com/rakshasa/rtorrent/wiki/COMMAND-Execute) -- Tilde does not get special treatment",
+          "type": "Command"
+        },
+        {
+          "command": "execute.raw.bg",
+          "deprecatedCommands": [
+            ""
+          ],
+          "description": "Same as above but run the command in the background",
+          "type": "Command"
+        },
+        {
+          "command": "execute.raw_nothrow",
+          "deprecatedCommands": [
+            "execute_raw_nothrow"
+          ],
+          "description": "[COMMAND Execute](https://github.com/rakshasa/rtorrent/wiki/COMMAND-Execute)",
+          "type": "Command"
+        },
+        {
+          "command": "execute.raw_nothrow.bg",
+          "deprecatedCommands": [
+            ""
+          ],
+          "description": "Same as above but run the command in the background",
+          "type": "Command"
+        }
+      ]
+    }
   },
   "scheduling": {
     "header": "Scheduling",
-    "command": [
-      {
-        "command": "schedule2",
-        "deprecatedCommands": [
-          "schedule"
-        ],
-        "description": "See [COMMAND Scheduling](https://github.com/rakshasa/rtorrent/wiki/COMMAND-Scheduling)",
-        "type": "Command"
-      },
-      {
-        "command": "schedule_remove2",
-        "deprecatedCommands": [
-          "schedule_remove"
-        ],
-        "description": "See [COMMAND Scheduling](https://github.com/rakshasa/rtorrent/wiki/COMMAND-Scheduling)",
-        "type": "Command"
-      }
-    ]
+    "attributes": {
+      "command": [
+        {
+          "command": "schedule2",
+          "deprecatedCommands": [
+            "schedule"
+          ],
+          "description": "See [COMMAND Scheduling](https://github.com/rakshasa/rtorrent/wiki/COMMAND-Scheduling)",
+          "type": "Command"
+        },
+        {
+          "command": "schedule_remove2",
+          "deprecatedCommands": [
+            "schedule_remove"
+          ],
+          "description": "See [COMMAND Scheduling](https://github.com/rakshasa/rtorrent/wiki/COMMAND-Scheduling)",
+          "type": "Command"
+        }
+      ]
+    }
   },
   "directory": {
     "header": "Directory",
-    "variable": [
-      {
-        "command": "directory.default",
-        "deprecatedCommands": [
-          "get_directory"
-        ],
-        "description": "Prints the default directory for downloaded torrent data",
-        "type": "Variable"
-      }
-    ],
-    "command": [
-      {
-        "command": "directory.default.set",
-        "deprecatedCommands": [
-          "directory"
-        ],
-        "description": "Sets the default directory for downloaded torrent data",
-        "type": "Command"
-      },
-      {
-        "command": "directory.default.set",
-        "deprecatedCommands": [
-          "set_directory"
-        ],
-        "description": "Same as above",
-        "type": "Command"
-      }
-    ]
+    "attributes": {
+      "variable": [
+        {
+          "command": "directory.default",
+          "deprecatedCommands": [
+            "get_directory"
+          ],
+          "description": "Prints the default directory for downloaded torrent data",
+          "type": "Variable"
+        }
+      ],
+      "command": [
+        {
+          "command": "directory.default.set",
+          "deprecatedCommands": [
+            "directory"
+          ],
+          "description": "Sets the default directory for downloaded torrent data",
+          "type": "Command"
+        },
+        {
+          "command": "directory.default.set",
+          "deprecatedCommands": [
+            "set_directory"
+          ],
+          "description": "Same as above",
+          "type": "Command"
+        }
+      ]
+    }
   },
   "ratio": {
     "header": "Ratio",
-    "command": [
-      {
-        "command": "group.seeding.ratio.disable",
-        "deprecatedCommands": [
-          "ratio.disable"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "group.seeding.ratio.enable",
-        "deprecatedCommands": [
-          "ratio.enable"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "group2.seeding.ratio.max.set",
-        "deprecatedCommands": [
-          "ratio.max.set"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "group2.seeding.ratio.min.set",
-        "deprecatedCommands": [
-          "ratio.min.set"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "group2.seeding.ratio.upload.set",
-        "deprecatedCommands": [
-          "ratio.upload.set"
-        ],
-        "description": "",
-        "type": "Command"
-      }
-    ],
-    "variable": [
-      {
-        "command": "group2.seeding.ratio.max",
-        "deprecatedCommands": [
-          "ratio.max"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "group2.seeding.ratio.min",
-        "deprecatedCommands": [
-          "ratio.min"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "group2.seeding.ratio.upload",
-        "deprecatedCommands": [
-          "ratio.upload"
-        ],
-        "description": "",
-        "type": "Variable"
-      }
-    ]
+    "attributes": {
+      "command": [
+        {
+          "command": "group.seeding.ratio.disable",
+          "deprecatedCommands": [
+            "ratio.disable"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "group.seeding.ratio.enable",
+          "deprecatedCommands": [
+            "ratio.enable"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "group2.seeding.ratio.max.set",
+          "deprecatedCommands": [
+            "ratio.max.set"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "group2.seeding.ratio.min.set",
+          "deprecatedCommands": [
+            "ratio.min.set"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "group2.seeding.ratio.upload.set",
+          "deprecatedCommands": [
+            "ratio.upload.set"
+          ],
+          "description": "",
+          "type": "Command"
+        }
+      ],
+      "variable": [
+        {
+          "command": "group2.seeding.ratio.max",
+          "deprecatedCommands": [
+            "ratio.max"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "group2.seeding.ratio.min",
+          "deprecatedCommands": [
+            "ratio.min"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "group2.seeding.ratio.upload",
+          "deprecatedCommands": [
+            "ratio.upload"
+          ],
+          "description": "",
+          "type": "Variable"
+        }
+      ]
+    }
   },
   "conversion": {
     "header": "Conversion",
-    "command": [
-      {
-        "command": "convert.date",
-        "deprecatedCommands": [
-          "to_date"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "convert.elapsed_time",
-        "deprecatedCommands": [
-          "to_elapsed_time"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "convert.gm_date",
-        "deprecatedCommands": [
-          "to_gm_date"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "convert.gm_time",
-        "deprecatedCommands": [
-          "to_gm_time"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "convert.kb",
-        "deprecatedCommands": [
-          "to_kb"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "convert.mb",
-        "deprecatedCommands": [
-          "to_mb"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "convert.time",
-        "deprecatedCommands": [
-          "to_time"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "convert.throttle",
-        "deprecatedCommands": [
-          "to_throttle"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "convert.xb",
-        "deprecatedCommands": [
-          "to_xb"
-        ],
-        "description": "",
-        "type": "Command"
-      }
-    ]
+    "attributes": {
+      "command": [
+        {
+          "command": "convert.date",
+          "deprecatedCommands": [
+            "to_date"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "convert.elapsed_time",
+          "deprecatedCommands": [
+            "to_elapsed_time"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "convert.gm_date",
+          "deprecatedCommands": [
+            "to_gm_date"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "convert.gm_time",
+          "deprecatedCommands": [
+            "to_gm_time"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "convert.kb",
+          "deprecatedCommands": [
+            "to_kb"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "convert.mb",
+          "deprecatedCommands": [
+            "to_mb"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "convert.time",
+          "deprecatedCommands": [
+            "to_time"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "convert.throttle",
+          "deprecatedCommands": [
+            "to_throttle"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "convert.xb",
+          "deprecatedCommands": [
+            "to_xb"
+          ],
+          "description": "",
+          "type": "Command"
+        }
+      ]
+    }
   },
   "protocol": {
     "header": "Protocol",
-    "variable": [
-      {
-        "command": "protocol.connection.leech",
-        "deprecatedCommands": [
-          "get_connection_leech"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "protocol.connection.seed",
-        "deprecatedCommands": [
-          "get_connection_seed"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "protocol.pex",
-        "deprecatedCommands": [
-          "get_peer_exchange"
-        ],
-        "description": "",
-        "type": "Variable"
-      }
-    ],
-    "command": [
-      {
-        "command": "protocol.connection.leech.set",
-        "deprecatedCommands": [
-          "connection_leech"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "protocol.connection.leech.set",
-        "deprecatedCommands": [
-          "set_connection_leech"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "protocol.connection.seed.set",
-        "deprecatedCommands": [
-          "connection_seed"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "protocol.connection.seed.set",
-        "deprecatedCommands": [
-          "set_connection_seed"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "protocol.encryption.set",
-        "deprecatedCommands": [
-          "encryption"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "protocol.pex.set",
-        "deprecatedCommands": [
-          "peer_exchange"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "protocol.pex.set",
-        "deprecatedCommands": [
-          "set_peer_exchange"
-        ],
-        "description": "",
-        "type": "Command"
-      }
-    ]
+    "attributes": {
+      "variable": [
+        {
+          "command": "protocol.connection.leech",
+          "deprecatedCommands": [
+            "get_connection_leech"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "protocol.connection.seed",
+          "deprecatedCommands": [
+            "get_connection_seed"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "protocol.pex",
+          "deprecatedCommands": [
+            "get_peer_exchange"
+          ],
+          "description": "",
+          "type": "Variable"
+        }
+      ],
+      "command": [
+        {
+          "command": "protocol.connection.leech.set",
+          "deprecatedCommands": [
+            "connection_leech"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "protocol.connection.leech.set",
+          "deprecatedCommands": [
+            "set_connection_leech"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "protocol.connection.seed.set",
+          "deprecatedCommands": [
+            "connection_seed"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "protocol.connection.seed.set",
+          "deprecatedCommands": [
+            "set_connection_seed"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "protocol.encryption.set",
+          "deprecatedCommands": [
+            "encryption"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "protocol.pex.set",
+          "deprecatedCommands": [
+            "peer_exchange"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "protocol.pex.set",
+          "deprecatedCommands": [
+            "set_peer_exchange"
+          ],
+          "description": "",
+          "type": "Command"
+        }
+      ]
+    }
   },
   "memory/pieces": {
     "header": "Memory/Pieces",
-    "variable": [
-      {
-        "command": "pieces.memory.current",
-        "deprecatedCommands": [
-          "get_memory_usage"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "pieces.memory.max",
-        "deprecatedCommands": [
-          "get_max_memory_usage"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "pieces.hash.on_completion",
-        "deprecatedCommands": [
-          "get_check_hash"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "pieces.preload.type",
-        "deprecatedCommands": [
-          "get_preload_type"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "pieces.preload.min_size",
-        "deprecatedCommands": [
-          "get_preload_min_size"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "pieces.preload.min_rate",
-        "deprecatedCommands": [
-          "get_preload_required_rate"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "pieces.stats_preloaded",
-        "deprecatedCommands": [
-          "get_stats_preloaded"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "pieces.stats_not_preloaded",
-        "deprecatedCommands": [
-          "get_stats_not_preloaded"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "pieces.sync.always_safe",
-        "deprecatedCommands": [
-          "get_safe_sync"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "pieces.sync.timeout",
-        "deprecatedCommands": [
-          "get_timeout_sync"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "pieces.sync.timeout_safe",
-        "deprecatedCommands": [
-          "get_timeout_safe_sync"
-        ],
-        "description": "",
-        "type": "Variable"
-      }
-    ],
-    "command": [
-      {
-        "command": "pieces.memory.max.set",
-        "deprecatedCommands": [
-          "max_memory_usage"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "pieces.memory.max.set",
-        "deprecatedCommands": [
-          "set_max_memory_usage"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "pieces.hash.on_completion.set",
-        "deprecatedCommands": [
-          "check_hash"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "pieces.hash.on_completion.set",
-        "deprecatedCommands": [
-          "set_check_hash"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "pieces.preload.min_size.set",
-        "deprecatedCommands": [
-          "set_preload_min_size"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "pieces.preload.min_rate.set",
-        "deprecatedCommands": [
-          "set_preload_required_rate"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "pieces.preload.type.set",
-        "deprecatedCommands": [
-          "set_preload_type"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "pieces.sync.always_safe.set",
-        "deprecatedCommands": [
-          "set_safe_sync"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "pieces.sync.timeout.set",
-        "deprecatedCommands": [
-          "set_timeout_sync"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "pieces.sync.timeout_safe.set",
-        "deprecatedCommands": [
-          "set_timeout_safe_sync"
-        ],
-        "description": "",
-        "type": "Command"
-      }
-    ]
+    "attributes": {
+      "variable": [
+        {
+          "command": "pieces.memory.current",
+          "deprecatedCommands": [
+            "get_memory_usage"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "pieces.memory.max",
+          "deprecatedCommands": [
+            "get_max_memory_usage"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "pieces.hash.on_completion",
+          "deprecatedCommands": [
+            "get_check_hash"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "pieces.preload.type",
+          "deprecatedCommands": [
+            "get_preload_type"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "pieces.preload.min_size",
+          "deprecatedCommands": [
+            "get_preload_min_size"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "pieces.preload.min_rate",
+          "deprecatedCommands": [
+            "get_preload_required_rate"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "pieces.stats_preloaded",
+          "deprecatedCommands": [
+            "get_stats_preloaded"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "pieces.stats_not_preloaded",
+          "deprecatedCommands": [
+            "get_stats_not_preloaded"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "pieces.sync.always_safe",
+          "deprecatedCommands": [
+            "get_safe_sync"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "pieces.sync.timeout",
+          "deprecatedCommands": [
+            "get_timeout_sync"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "pieces.sync.timeout_safe",
+          "deprecatedCommands": [
+            "get_timeout_safe_sync"
+          ],
+          "description": "",
+          "type": "Variable"
+        }
+      ],
+      "command": [
+        {
+          "command": "pieces.memory.max.set",
+          "deprecatedCommands": [
+            "max_memory_usage"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "pieces.memory.max.set",
+          "deprecatedCommands": [
+            "set_max_memory_usage"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "pieces.hash.on_completion.set",
+          "deprecatedCommands": [
+            "check_hash"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "pieces.hash.on_completion.set",
+          "deprecatedCommands": [
+            "set_check_hash"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "pieces.preload.min_size.set",
+          "deprecatedCommands": [
+            "set_preload_min_size"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "pieces.preload.min_rate.set",
+          "deprecatedCommands": [
+            "set_preload_required_rate"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "pieces.preload.type.set",
+          "deprecatedCommands": [
+            "set_preload_type"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "pieces.sync.always_safe.set",
+          "deprecatedCommands": [
+            "set_safe_sync"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "pieces.sync.timeout.set",
+          "deprecatedCommands": [
+            "set_timeout_sync"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "pieces.sync.timeout_safe.set",
+          "deprecatedCommands": [
+            "set_timeout_safe_sync"
+          ],
+          "description": "",
+          "type": "Command"
+        }
+      ]
+    }
   },
   "throttle": {
     "header": "Throttle",
-    "variable": [
-      {
-        "command": "throttle.down",
-        "deprecatedCommands": [
-          "throttle_down"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "throttle.global_down.max_rate",
-        "deprecatedCommands": [
-          "get_download_rate"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "throttle.global_down.rate",
-        "deprecatedCommands": [
-          "get_down_rate"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "throttle.global_down.total",
-        "deprecatedCommands": [
-          "get_down_total"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "throttle.global_up.max_rate",
-        "deprecatedCommands": [
-          "get_upload_rate"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "throttle.global_up.rate",
-        "deprecatedCommands": [
-          "get_up_rate"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "throttle.global_up.total",
-        "deprecatedCommands": [
-          "get_up_total"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "throttle.ip",
-        "deprecatedCommands": [
-          "throttle_ip"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "throttle.max_downloads.div",
-        "deprecatedCommands": [
-          "get_max_downloads_div"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "throttle.max_downloads.global",
-        "deprecatedCommands": [
-          "get_max_downloads_global"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "throttle.max_peers.normal",
-        "deprecatedCommands": [
-          "get_max_peers"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "throttle.max_peers.seed",
-        "deprecatedCommands": [
-          "get_max_peers_seed"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "throttle.max_uploads",
-        "deprecatedCommands": [
-          "get_max_uploads"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "throttle.max_uploads.div",
-        "deprecatedCommands": [
-          "get_max_uploads_div"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "throttle.max_uploads.global",
-        "deprecatedCommands": [
-          "get_max_uploads_global"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "throttle.min_downloads.set",
-        "deprecatedCommands": [
-          "min_downloads"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "throttle.min_peers.normal",
-        "deprecatedCommands": [
-          "get_min_peers"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "throttle.min_peers.seed",
-        "deprecatedCommands": [
-          "get_min_peers_seed"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "throttle.min_uploads.set",
-        "deprecatedCommands": [
-          "min_uploads"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "throttle.up",
-        "deprecatedCommands": [
-          "throttle_up"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "throttle.up.max",
-        "deprecatedCommands": [
-          "get_throttle_up_max"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "throttle.up.rate",
-        "deprecatedCommands": [
-          "get_throttle_up_rate"
-        ],
-        "description": "",
-        "type": "Variable"
-      }
-    ],
-    "command": [
-      {
-        "command": "throttle.down.max",
-        "deprecatedCommands": [
-          "get_throttle_down_max"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "throttle.down.rate",
-        "deprecatedCommands": [
-          "get_throttle_down_rate"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "throttle.global_down.max_rate.set",
-        "deprecatedCommands": [
-          "set_download_rate"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "throttle.global_down.max_rate.set_kb",
-        "deprecatedCommands": [
-          "download_rate"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "throttle.global_up.max_rate.set",
-        "deprecatedCommands": [
-          "set_upload_rate"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "throttle.global_up.max_rate.set_kb",
-        "deprecatedCommands": [
-          "upload_rate"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "throttle.max_downloads.set",
-        "deprecatedCommands": [
-          "max_downloads"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "throttle.max_downloads.div.set",
-        "deprecatedCommands": [
-          "max_downloads_div"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "throttle.max_downloads.div.set",
-        "deprecatedCommands": [
-          "set_max_downloads_div"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "throttle.max_downloads.global.set",
-        "deprecatedCommands": [
-          "max_downloads_global"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "throttle.max_downloads.global.set",
-        "deprecatedCommands": [
-          "set_max_downloads_global"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "throttle.max_peers.normal.set",
-        "deprecatedCommands": [
-          "max_peers"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "throttle.max_peers.normal.set",
-        "deprecatedCommands": [
-          "set_max_peers"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "throttle.max_peers.seed.set",
-        "deprecatedCommands": [
-          "max_peers_seed"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "throttle.max_peers.seed.set",
-        "deprecatedCommands": [
-          "set_max_peers_seed"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "throttle.max_uploads.set",
-        "deprecatedCommands": [
-          "max_uploads"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "throttle.max_uploads.set",
-        "deprecatedCommands": [
-          "set_max_uploads"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "throttle.max_uploads.div.set",
-        "deprecatedCommands": [
-          "max_uploads_div"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "throttle.max_uploads.div.set",
-        "deprecatedCommands": [
-          "set_max_uploads_div"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "throttle.max_uploads.global.set",
-        "deprecatedCommands": [
-          "max_uploads_global"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "throttle.max_uploads.global.set",
-        "deprecatedCommands": [
-          "set_max_uploads_global"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "throttle.min_peers.normal.set",
-        "deprecatedCommands": [
-          "min_peers"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "throttle.min_peers.normal.set",
-        "deprecatedCommands": [
-          "set_min_peers"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "throttle.min_peers.seed.set",
-        "deprecatedCommands": [
-          "min_peers_seed"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "throttle.min_peers.seed.set",
-        "deprecatedCommands": [
-          "set_min_peers_seed"
-        ],
-        "description": "",
-        "type": "Command"
-      }
-    ]
+    "attributes": {
+      "variable": [
+        {
+          "command": "throttle.down",
+          "deprecatedCommands": [
+            "throttle_down"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "throttle.global_down.max_rate",
+          "deprecatedCommands": [
+            "get_download_rate"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "throttle.global_down.rate",
+          "deprecatedCommands": [
+            "get_down_rate"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "throttle.global_down.total",
+          "deprecatedCommands": [
+            "get_down_total"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "throttle.global_up.max_rate",
+          "deprecatedCommands": [
+            "get_upload_rate"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "throttle.global_up.rate",
+          "deprecatedCommands": [
+            "get_up_rate"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "throttle.global_up.total",
+          "deprecatedCommands": [
+            "get_up_total"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "throttle.ip",
+          "deprecatedCommands": [
+            "throttle_ip"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "throttle.max_downloads.div",
+          "deprecatedCommands": [
+            "get_max_downloads_div"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "throttle.max_downloads.global",
+          "deprecatedCommands": [
+            "get_max_downloads_global"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "throttle.max_peers.normal",
+          "deprecatedCommands": [
+            "get_max_peers"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "throttle.max_peers.seed",
+          "deprecatedCommands": [
+            "get_max_peers_seed"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "throttle.max_uploads",
+          "deprecatedCommands": [
+            "get_max_uploads"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "throttle.max_uploads.div",
+          "deprecatedCommands": [
+            "get_max_uploads_div"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "throttle.max_uploads.global",
+          "deprecatedCommands": [
+            "get_max_uploads_global"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "throttle.min_downloads.set",
+          "deprecatedCommands": [
+            "min_downloads"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "throttle.min_peers.normal",
+          "deprecatedCommands": [
+            "get_min_peers"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "throttle.min_peers.seed",
+          "deprecatedCommands": [
+            "get_min_peers_seed"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "throttle.min_uploads.set",
+          "deprecatedCommands": [
+            "min_uploads"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "throttle.up",
+          "deprecatedCommands": [
+            "throttle_up"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "throttle.up.max",
+          "deprecatedCommands": [
+            "get_throttle_up_max"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "throttle.up.rate",
+          "deprecatedCommands": [
+            "get_throttle_up_rate"
+          ],
+          "description": "",
+          "type": "Variable"
+        }
+      ],
+      "command": [
+        {
+          "command": "throttle.down.max",
+          "deprecatedCommands": [
+            "get_throttle_down_max"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "throttle.down.rate",
+          "deprecatedCommands": [
+            "get_throttle_down_rate"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "throttle.global_down.max_rate.set",
+          "deprecatedCommands": [
+            "set_download_rate"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "throttle.global_down.max_rate.set_kb",
+          "deprecatedCommands": [
+            "download_rate"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "throttle.global_up.max_rate.set",
+          "deprecatedCommands": [
+            "set_upload_rate"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "throttle.global_up.max_rate.set_kb",
+          "deprecatedCommands": [
+            "upload_rate"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "throttle.max_downloads.set",
+          "deprecatedCommands": [
+            "max_downloads"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "throttle.max_downloads.div.set",
+          "deprecatedCommands": [
+            "max_downloads_div"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "throttle.max_downloads.div.set",
+          "deprecatedCommands": [
+            "set_max_downloads_div"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "throttle.max_downloads.global.set",
+          "deprecatedCommands": [
+            "max_downloads_global"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "throttle.max_downloads.global.set",
+          "deprecatedCommands": [
+            "set_max_downloads_global"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "throttle.max_peers.normal.set",
+          "deprecatedCommands": [
+            "max_peers"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "throttle.max_peers.normal.set",
+          "deprecatedCommands": [
+            "set_max_peers"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "throttle.max_peers.seed.set",
+          "deprecatedCommands": [
+            "max_peers_seed"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "throttle.max_peers.seed.set",
+          "deprecatedCommands": [
+            "set_max_peers_seed"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "throttle.max_uploads.set",
+          "deprecatedCommands": [
+            "max_uploads"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "throttle.max_uploads.set",
+          "deprecatedCommands": [
+            "set_max_uploads"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "throttle.max_uploads.div.set",
+          "deprecatedCommands": [
+            "max_uploads_div"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "throttle.max_uploads.div.set",
+          "deprecatedCommands": [
+            "set_max_uploads_div"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "throttle.max_uploads.global.set",
+          "deprecatedCommands": [
+            "max_uploads_global"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "throttle.max_uploads.global.set",
+          "deprecatedCommands": [
+            "set_max_uploads_global"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "throttle.min_peers.normal.set",
+          "deprecatedCommands": [
+            "min_peers"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "throttle.min_peers.normal.set",
+          "deprecatedCommands": [
+            "set_min_peers"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "throttle.min_peers.seed.set",
+          "deprecatedCommands": [
+            "min_peers_seed"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "throttle.min_peers.seed.set",
+          "deprecatedCommands": [
+            "set_min_peers_seed"
+          ],
+          "description": "",
+          "type": "Command"
+        }
+      ]
+    }
   },
   "dht": {
     "header": "DHT",
-    "command": [
-      {
-        "command": "dht.add_node",
-        "deprecatedCommands": [
-          "dht_add_node"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "dht.mode.set",
-        "deprecatedCommands": [
-          "dht"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "dht.port.set",
-        "deprecatedCommands": [
-          "dht_port"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "dht.port.set",
-        "deprecatedCommands": [
-          "set_dht_port"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "dht.throttle.name.set",
-        "deprecatedCommands": [
-          "set_dht_throttle"
-        ],
-        "description": "",
-        "type": "Command"
-      }
-    ],
-    "variable": [
-      {
-        "command": "dht.port",
-        "deprecatedCommands": [
-          "get_dht_port"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "dht.throttle.name",
-        "deprecatedCommands": [
-          "get_dht_throttle"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "dht.statistics",
-        "deprecatedCommands": [
-          "dht_statistics"
-        ],
-        "description": "",
-        "type": "Variable"
-      }
-    ]
+    "attributes": {
+      "command": [
+        {
+          "command": "dht.add_node",
+          "deprecatedCommands": [
+            "dht_add_node"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "dht.mode.set",
+          "deprecatedCommands": [
+            "dht"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "dht.port.set",
+          "deprecatedCommands": [
+            "dht_port"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "dht.port.set",
+          "deprecatedCommands": [
+            "set_dht_port"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "dht.throttle.name.set",
+          "deprecatedCommands": [
+            "set_dht_throttle"
+          ],
+          "description": "",
+          "type": "Command"
+        }
+      ],
+      "variable": [
+        {
+          "command": "dht.port",
+          "deprecatedCommands": [
+            "get_dht_port"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "dht.throttle.name",
+          "deprecatedCommands": [
+            "get_dht_throttle"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "dht.statistics",
+          "deprecatedCommands": [
+            "dht_statistics"
+          ],
+          "description": "",
+          "type": "Variable"
+        }
+      ]
+    }
   },
   "network": {
     "header": "Network",
-    "variable": [
-      {
-        "command": "network.bind_address",
-        "deprecatedCommands": [
-          "get_bind"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "network.local_address",
-        "deprecatedCommands": [
-          "get_ip"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "network.http.capath",
-        "deprecatedCommands": [
-          "get_http_capath"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "network.http.cacert",
-        "deprecatedCommands": [
-          "get_http_cacert"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "network.http.max_open",
-        "deprecatedCommands": [
-          "get_max_open_http"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "network.http.proxy_address",
-        "deprecatedCommands": [
-          "get_http_proxy"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "network.max_open_files",
-        "deprecatedCommands": [
-          "get_max_open_files"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "network.max_open_sockets",
-        "deprecatedCommands": [
-          "get_max_open_sockets"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "network.port_open",
-        "deprecatedCommands": [
-          "get_port_open"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "network.port_random",
-        "deprecatedCommands": [
-          "get_port_random"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "network.port_range",
-        "deprecatedCommands": [
-          "get_port_range"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "network.proxy_address",
-        "deprecatedCommands": [
-          "get_proxy_address"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "network.receive_buffer.size",
-        "deprecatedCommands": [
-          "get_receive_buffer_size"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "network.scgi.dont_route",
-        "deprecatedCommands": [
-          "get_scgi_dont_route"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "network.send_buffer.size",
-        "deprecatedCommands": [
-          "get_send_buffer_size"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "network.xmlrpc.size_limit",
-        "deprecatedCommands": [
-          "get_xmlrpc_size_limit"
-        ],
-        "description": "",
-        "type": "Variable"
-      }
-    ],
-    "command": [
-      {
-        "command": "network.bind_address.set",
-        "deprecatedCommands": [
-          "bind"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "network.bind_address.set",
-        "deprecatedCommands": [
-          "set_bind"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "network.local_address.set",
-        "deprecatedCommands": [
-          "ip"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "network.local_address.set",
-        "deprecatedCommands": [
-          "set_ip"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "network.http.capath.set",
-        "deprecatedCommands": [
-          "http_capath"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "network.http.capath.set",
-        "deprecatedCommands": [
-          "set_http_capath"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "network.http.cacert.set",
-        "deprecatedCommands": [
-          "http_cacert"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "network.http.cacert.set",
-        "deprecatedCommands": [
-          "set_http_cacert"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "network.http.max_open.set",
-        "deprecatedCommands": [
-          "set_max_open_http"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "network.http.proxy_address.set",
-        "deprecatedCommands": [
-          "http_proxy"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "network.http.proxy_address.set",
-        "deprecatedCommands": [
-          "set_http_proxy"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "network.max_open_files.set",
-        "deprecatedCommands": [
-          "set_max_open_files"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "network.port_open.set",
-        "deprecatedCommands": [
-          "port_open"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "network.port_open.set",
-        "deprecatedCommands": [
-          "set_port_open"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "network.port_random.set",
-        "deprecatedCommands": [
-          "port_random"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "network.port_random.set",
-        "deprecatedCommands": [
-          "set_port_random"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "network.port_range.set",
-        "deprecatedCommands": [
-          "port_range"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "network.port_range.set",
-        "deprecatedCommands": [
-          "set_port_range"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "network.proxy_address.set",
-        "deprecatedCommands": [
-          "proxy_address"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "network.proxy_address.set",
-        "deprecatedCommands": [
-          "set_proxy_address"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "network.receive_buffer.size.set",
-        "deprecatedCommands": [
-          "set_receive_buffer_size"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "network.scgi.dont_route.set",
-        "deprecatedCommands": [
-          "set_scgi_dont_route"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "network.scgi.open_local",
-        "deprecatedCommands": [
-          "scgi_local"
-        ],
-        "description": "| Variable",
-        "type": "Command"
-      },
-      {
-        "command": "network.scgi.open_port",
-        "deprecatedCommands": [
-          "scgi_port"
-        ],
-        "description": "| Variable",
-        "type": "Command"
-      },
-      {
-        "command": "network.send_buffer.size.set",
-        "deprecatedCommands": [
-          "set_send_buffer_size"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "network.xmlrpc.dialect.set",
-        "deprecatedCommands": [
-          "set_xmlrpc_dialect"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "network.xmlrpc.dialect.set",
-        "deprecatedCommands": [
-          "xmlrpc_dialect"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "network.xmlrpc.size_limit.set",
-        "deprecatedCommands": [
-          "set_xmlrpc_size_limit"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "network.xmlrpc.size_limit.set",
-        "deprecatedCommands": [
-          "xmlrpc_size_limit"
-        ],
-        "description": "",
-        "type": "Command"
-      }
-    ]
+    "attributes": {
+      "variable": [
+        {
+          "command": "network.bind_address",
+          "deprecatedCommands": [
+            "get_bind"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "network.local_address",
+          "deprecatedCommands": [
+            "get_ip"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "network.http.capath",
+          "deprecatedCommands": [
+            "get_http_capath"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "network.http.cacert",
+          "deprecatedCommands": [
+            "get_http_cacert"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "network.http.max_open",
+          "deprecatedCommands": [
+            "get_max_open_http"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "network.http.proxy_address",
+          "deprecatedCommands": [
+            "get_http_proxy"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "network.max_open_files",
+          "deprecatedCommands": [
+            "get_max_open_files"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "network.max_open_sockets",
+          "deprecatedCommands": [
+            "get_max_open_sockets"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "network.port_open",
+          "deprecatedCommands": [
+            "get_port_open"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "network.port_random",
+          "deprecatedCommands": [
+            "get_port_random"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "network.port_range",
+          "deprecatedCommands": [
+            "get_port_range"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "network.proxy_address",
+          "deprecatedCommands": [
+            "get_proxy_address"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "network.receive_buffer.size",
+          "deprecatedCommands": [
+            "get_receive_buffer_size"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "network.scgi.dont_route",
+          "deprecatedCommands": [
+            "get_scgi_dont_route"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "network.send_buffer.size",
+          "deprecatedCommands": [
+            "get_send_buffer_size"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "network.xmlrpc.size_limit",
+          "deprecatedCommands": [
+            "get_xmlrpc_size_limit"
+          ],
+          "description": "",
+          "type": "Variable"
+        }
+      ],
+      "command": [
+        {
+          "command": "network.bind_address.set",
+          "deprecatedCommands": [
+            "bind"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "network.bind_address.set",
+          "deprecatedCommands": [
+            "set_bind"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "network.local_address.set",
+          "deprecatedCommands": [
+            "ip"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "network.local_address.set",
+          "deprecatedCommands": [
+            "set_ip"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "network.http.capath.set",
+          "deprecatedCommands": [
+            "http_capath"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "network.http.capath.set",
+          "deprecatedCommands": [
+            "set_http_capath"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "network.http.cacert.set",
+          "deprecatedCommands": [
+            "http_cacert"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "network.http.cacert.set",
+          "deprecatedCommands": [
+            "set_http_cacert"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "network.http.max_open.set",
+          "deprecatedCommands": [
+            "set_max_open_http"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "network.http.proxy_address.set",
+          "deprecatedCommands": [
+            "http_proxy"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "network.http.proxy_address.set",
+          "deprecatedCommands": [
+            "set_http_proxy"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "network.max_open_files.set",
+          "deprecatedCommands": [
+            "set_max_open_files"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "network.port_open.set",
+          "deprecatedCommands": [
+            "port_open"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "network.port_open.set",
+          "deprecatedCommands": [
+            "set_port_open"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "network.port_random.set",
+          "deprecatedCommands": [
+            "port_random"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "network.port_random.set",
+          "deprecatedCommands": [
+            "set_port_random"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "network.port_range.set",
+          "deprecatedCommands": [
+            "port_range"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "network.port_range.set",
+          "deprecatedCommands": [
+            "set_port_range"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "network.proxy_address.set",
+          "deprecatedCommands": [
+            "proxy_address"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "network.proxy_address.set",
+          "deprecatedCommands": [
+            "set_proxy_address"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "network.receive_buffer.size.set",
+          "deprecatedCommands": [
+            "set_receive_buffer_size"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "network.scgi.dont_route.set",
+          "deprecatedCommands": [
+            "set_scgi_dont_route"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "network.scgi.open_local",
+          "deprecatedCommands": [
+            "scgi_local"
+          ],
+          "description": "| Variable",
+          "type": "Command"
+        },
+        {
+          "command": "network.scgi.open_port",
+          "deprecatedCommands": [
+            "scgi_port"
+          ],
+          "description": "| Variable",
+          "type": "Command"
+        },
+        {
+          "command": "network.send_buffer.size.set",
+          "deprecatedCommands": [
+            "set_send_buffer_size"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "network.xmlrpc.dialect.set",
+          "deprecatedCommands": [
+            "set_xmlrpc_dialect"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "network.xmlrpc.dialect.set",
+          "deprecatedCommands": [
+            "xmlrpc_dialect"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "network.xmlrpc.size_limit.set",
+          "deprecatedCommands": [
+            "set_xmlrpc_size_limit"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "network.xmlrpc.size_limit.set",
+          "deprecatedCommands": [
+            "xmlrpc_size_limit"
+          ],
+          "description": "",
+          "type": "Command"
+        }
+      ]
+    }
   },
   "session": {
     "header": "Session",
-    "variable": [
-      {
-        "command": "session.path",
-        "deprecatedCommands": [
-          "get_session"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "session.name",
-        "deprecatedCommands": [
-          "get_name"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "session.on_completion",
-        "deprecatedCommands": [
-          "get_session_on_completion"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "session.save",
-        "deprecatedCommands": [
-          "session_save"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "session.use_lock",
-        "deprecatedCommands": [
-          "get_session_lock"
-        ],
-        "description": "",
-        "type": "Variable"
-      }
-    ],
-    "command": [
-      {
-        "command": "session.path.set",
-        "deprecatedCommands": [
-          "set_session"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "session.path.set",
-        "deprecatedCommands": [
-          "session"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "session.name.set",
-        "deprecatedCommands": [
-          "set_name"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "session.on_completion.set",
-        "deprecatedCommands": [
-          "set_session_on_completion"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "session.use_lock.set",
-        "deprecatedCommands": [
-          "set_session_lock"
-        ],
-        "description": "",
-        "type": "Command"
-      }
-    ]
+    "attributes": {
+      "variable": [
+        {
+          "command": "session.path",
+          "deprecatedCommands": [
+            "get_session"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "session.name",
+          "deprecatedCommands": [
+            "get_name"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "session.on_completion",
+          "deprecatedCommands": [
+            "get_session_on_completion"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "session.save",
+          "deprecatedCommands": [
+            "session_save"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "session.use_lock",
+          "deprecatedCommands": [
+            "get_session_lock"
+          ],
+          "description": "",
+          "type": "Variable"
+        }
+      ],
+      "command": [
+        {
+          "command": "session.path.set",
+          "deprecatedCommands": [
+            "set_session"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "session.path.set",
+          "deprecatedCommands": [
+            "session"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "session.name.set",
+          "deprecatedCommands": [
+            "set_name"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "session.on_completion.set",
+          "deprecatedCommands": [
+            "set_session_on_completion"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "session.use_lock.set",
+          "deprecatedCommands": [
+            "set_session_lock"
+          ],
+          "description": "",
+          "type": "Command"
+        }
+      ]
+    }
   },
   "method": {
     "header": "Method",
-    "command": [
-      {
-        "command": "method.insert",
-        "deprecatedCommands": [
-          "system.method.insert"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "method.erase",
-        "deprecatedCommands": [
-          "system.method.erase"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "method.get",
-        "deprecatedCommands": [
-          "system.method.get"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "method.set",
-        "deprecatedCommands": [
-          "system.method.set"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "method.list_keys",
-        "deprecatedCommands": [
-          "system.method.list_keys"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "method.has_key",
-        "deprecatedCommands": [
-          "system.method.has_key"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "method.set_key",
-        "deprecatedCommands": [
-          "system.method.set_key"
-        ],
-        "description": "",
-        "type": "Command"
-      }
-    ]
+    "attributes": {
+      "command": [
+        {
+          "command": "method.insert",
+          "deprecatedCommands": [
+            "system.method.insert"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "method.erase",
+          "deprecatedCommands": [
+            "system.method.erase"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "method.get",
+          "deprecatedCommands": [
+            "system.method.get"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "method.set",
+          "deprecatedCommands": [
+            "system.method.set"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "method.list_keys",
+          "deprecatedCommands": [
+            "system.method.list_keys"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "method.has_key",
+          "deprecatedCommands": [
+            "system.method.has_key"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "method.set_key",
+          "deprecatedCommands": [
+            "system.method.set_key"
+          ],
+          "description": "",
+          "type": "Command"
+        }
+      ]
+    }
   },
   "system": {
     "header": "System",
-    "variable": [
-      {
-        "command": "system.file.allocate",
-        "deprecatedCommands": [
-          "system.file_allocate"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "system.file.max_size",
-        "deprecatedCommands": [
-          "get_max_file_size"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "system.file.split_size",
-        "deprecatedCommands": [
-          "get_split_file_size"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "system.file.split_suffix",
-        "deprecatedCommands": [
-          "get_split_suffix"
-        ],
-        "description": "",
-        "type": "Variable"
-      }
-    ],
-    "command": [
-      {
-        "command": "system.file.allocate.set",
-        "deprecatedCommands": [
-          "system.file_allocate.set"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "system.file.max_size.set",
-        "deprecatedCommands": [
-          "set_max_file_size"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "system.file.split_size.set",
-        "deprecatedCommands": [
-          "set_split_file_size"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "system.file.split_suffix.set",
-        "deprecatedCommands": [
-          "set_split_suffix"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "system.daemon.set",
-        "deprecatedCommands": [
-          ""
-        ],
-        "description": "Daemon mode",
-        "type": "Command"
-      },
-      {
-        "command": "system.<env>.set",
-        "deprecatedCommands": [
-          ""
-        ],
-        "description": "Query the value of an environment variable",
-        "type": "Command"
-      },
-      {
-        "command": "system.shutdown.normal",
-        "deprecatedCommands": [
-          ""
-        ],
-        "description": "Shut down rTorrent after stop events have been sent to trackers",
-        "type": "Command"
-      },
-      {
-        "command": "system.shutdown.quick",
-        "deprecatedCommands": [
-          ""
-        ],
-        "description": "Shut down rTorrent quickly",
-        "type": "Command"
-      }
-    ]
+    "attributes": {
+      "variable": [
+        {
+          "command": "system.file.allocate",
+          "deprecatedCommands": [
+            "system.file_allocate"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "system.file.max_size",
+          "deprecatedCommands": [
+            "get_max_file_size"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "system.file.split_size",
+          "deprecatedCommands": [
+            "get_split_file_size"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "system.file.split_suffix",
+          "deprecatedCommands": [
+            "get_split_suffix"
+          ],
+          "description": "",
+          "type": "Variable"
+        }
+      ],
+      "command": [
+        {
+          "command": "system.file.allocate.set",
+          "deprecatedCommands": [
+            "system.file_allocate.set"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "system.file.max_size.set",
+          "deprecatedCommands": [
+            "set_max_file_size"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "system.file.split_size.set",
+          "deprecatedCommands": [
+            "set_split_file_size"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "system.file.split_suffix.set",
+          "deprecatedCommands": [
+            "set_split_suffix"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "system.daemon.set",
+          "deprecatedCommands": [
+            ""
+          ],
+          "description": "Daemon mode",
+          "type": "Command"
+        },
+        {
+          "command": "system.<env>.set",
+          "deprecatedCommands": [
+            ""
+          ],
+          "description": "Query the value of an environment variable",
+          "type": "Command"
+        },
+        {
+          "command": "system.shutdown.normal",
+          "deprecatedCommands": [
+            ""
+          ],
+          "description": "Shut down rTorrent after stop events have been sent to trackers",
+          "type": "Command"
+        },
+        {
+          "command": "system.shutdown.quick",
+          "deprecatedCommands": [
+            ""
+          ],
+          "description": "Shut down rTorrent quickly",
+          "type": "Command"
+        }
+      ]
+    }
   },
   "load": {
     "header": "Load",
-    "command": [
-      {
-        "command": "load.normal",
-        "deprecatedCommands": [
-          "load"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "load.start",
-        "deprecatedCommands": [
-          "load_start"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "load.start_verbose",
-        "deprecatedCommands": [
-          "load_start_verbose"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "load.raw",
-        "deprecatedCommands": [
-          "load_raw"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "load.raw_start",
-        "deprecatedCommands": [
-          "load_raw_start"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "load.raw_verbose",
-        "deprecatedCommands": [
-          "load_raw_verbose"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "load.verbose",
-        "deprecatedCommands": [
-          "load_verbose"
-        ],
-        "description": "",
-        "type": "Command"
-      }
-    ]
+    "attributes": {
+      "command": [
+        {
+          "command": "load.normal",
+          "deprecatedCommands": [
+            "load"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "load.start",
+          "deprecatedCommands": [
+            "load_start"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "load.start_verbose",
+          "deprecatedCommands": [
+            "load_start_verbose"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "load.raw",
+          "deprecatedCommands": [
+            "load_raw"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "load.raw_start",
+          "deprecatedCommands": [
+            "load_raw_start"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "load.raw_verbose",
+          "deprecatedCommands": [
+            "load_raw_verbose"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "load.verbose",
+          "deprecatedCommands": [
+            "load_verbose"
+          ],
+          "description": "",
+          "type": "Command"
+        }
+      ]
+    }
   },
   "tracker": {
     "header": "Tracker",
-    "variable": [
-      {
-        "command": "trackers.numwant",
-        "deprecatedCommands": [
-          "get_tracker_numwant"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "trackers.use_udp",
-        "deprecatedCommands": [
-          "get_use_udp_trackers"
-        ],
-        "description": "",
-        "type": "Variable"
-      }
-    ],
-    "command": [
-      {
-        "command": "trackers.numwant.set",
-        "deprecatedCommands": [
-          "set_tracker_numwant"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "trackers.numwant.set",
-        "deprecatedCommands": [
-          "tracker_numwant"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "trackers.use_udp.set",
-        "deprecatedCommands": [
-          "set_use_udp_trackers"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "trackers.use_udp.set",
-        "deprecatedCommands": [
-          "use_udp_trackers"
-        ],
-        "description": "",
-        "type": "Command"
-      }
-    ]
+    "attributes": {
+      "variable": [
+        {
+          "command": "trackers.numwant",
+          "deprecatedCommands": [
+            "get_tracker_numwant"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "trackers.use_udp",
+          "deprecatedCommands": [
+            "get_use_udp_trackers"
+          ],
+          "description": "",
+          "type": "Variable"
+        }
+      ],
+      "command": [
+        {
+          "command": "trackers.numwant.set",
+          "deprecatedCommands": [
+            "set_tracker_numwant"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "trackers.numwant.set",
+          "deprecatedCommands": [
+            "tracker_numwant"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "trackers.use_udp.set",
+          "deprecatedCommands": [
+            "set_use_udp_trackers"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "trackers.use_udp.set",
+          "deprecatedCommands": [
+            "use_udp_trackers"
+          ],
+          "description": "",
+          "type": "Command"
+        }
+      ]
+    }
   },
   "downloads": {
     "header": "Downloads",
-    "variable": [
-      {
-        "command": "d.base_filename",
-        "deprecatedCommands": [
-          "d.get_base_filename"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.base_path",
-        "deprecatedCommands": [
-          "d.get_base_path"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.bitfield",
-        "deprecatedCommands": [
-          "d.get_bitfield"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.bytes_done",
-        "deprecatedCommands": [
-          "d.get_bytes_done"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.chunk_size",
-        "deprecatedCommands": [
-          "d.get_chunk_size"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.chunks_hashed",
-        "deprecatedCommands": [
-          "d.get_chunks_hashed"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.complete",
-        "deprecatedCommands": [
-          "d.get_complete"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.completed_bytes",
-        "deprecatedCommands": [
-          "d.get_completed_bytes"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.completed_chunks",
-        "deprecatedCommands": [
-          "d.get_completed_chunks"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.connection_current",
-        "deprecatedCommands": [
-          "d.get_connection_current"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.connection_leech",
-        "deprecatedCommands": [
-          "d.get_connection_leech"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.connection_seed",
-        "deprecatedCommands": [
-          "d.get_connection_seed"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.custom",
-        "deprecatedCommands": [
-          "d.get_custom"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.custom1",
-        "deprecatedCommands": [
-          "d.get_custom1"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.custom2",
-        "deprecatedCommands": [
-          "d.get_custom2"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.custom3",
-        "deprecatedCommands": [
-          "d.get_custom3"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.custom4",
-        "deprecatedCommands": [
-          "d.get_custom4"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.custom5",
-        "deprecatedCommands": [
-          "d.get_custom5"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.custom_throw",
-        "deprecatedCommands": [
-          "d.get_custom_throw"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.create_link",
-        "deprecatedCommands": [
-          "create_link"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.creation_date",
-        "deprecatedCommands": [
-          "d.get_creation_date"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.delete_link",
-        "deprecatedCommands": [
-          "delete_link"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.delete_tied",
-        "deprecatedCommands": [
-          "delete_tied"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.directory",
-        "deprecatedCommands": [
-          "d.get_directory"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.directory_base",
-        "deprecatedCommands": [
-          "d.get_directory_base"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.down.rate",
-        "deprecatedCommands": [
-          "d.get_down_rate"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.down.total",
-        "deprecatedCommands": [
-          "d.get_down_total"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.free_diskspace",
-        "deprecatedCommands": [
-          "d.get_free_diskspace"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.hash",
-        "deprecatedCommands": [
-          "d.get_hash"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.hashing",
-        "deprecatedCommands": [
-          "d.get_hashing"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.hashing_failed",
-        "deprecatedCommands": [
-          "d.get_hashing_failed"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.ignore_commands",
-        "deprecatedCommands": [
-          "d.get_ignore_commands"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.left_bytes",
-        "deprecatedCommands": [
-          "d.get_left_bytes"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.local_id",
-        "deprecatedCommands": [
-          "d.get_local_id"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.local_id_html",
-        "deprecatedCommands": [
-          "d.get_local_id_html"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.loaded_file",
-        "deprecatedCommands": [
-          "d.get_loaded_file"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.max_file_size",
-        "deprecatedCommands": [
-          "d.get_max_file_size"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.max_size_pex",
-        "deprecatedCommands": [
-          "d.get_max_size_pex"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.message",
-        "deprecatedCommands": [
-          "d.get_message"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.mode",
-        "deprecatedCommands": [
-          "d.get_mode"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.multicall2",
-        "deprecatedCommands": [
-          "d.multicall"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.name",
-        "deprecatedCommands": [
-          "d.get_name"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.peer_exchange",
-        "deprecatedCommands": [
-          "d.get_peer_exchange"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.peers_accounted",
-        "deprecatedCommands": [
-          "d.get_peers_accounted"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.peers_complete",
-        "deprecatedCommands": [
-          "d.get_peers_complete"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.peers_connected",
-        "deprecatedCommands": [
-          "d.get_peers_connected"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.peers_max",
-        "deprecatedCommands": [
-          "d.get_peers_max"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.peers_min",
-        "deprecatedCommands": [
-          "d.get_peers_min"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.peers_not_connected",
-        "deprecatedCommands": [
-          "d.get_peers_not_connected"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.priority",
-        "deprecatedCommands": [
-          "d.get_priority"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.priority_str",
-        "deprecatedCommands": [
-          "d.get_priority_str"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.ratio",
-        "deprecatedCommands": [
-          "d.get_ratio"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.size_bytes",
-        "deprecatedCommands": [
-          "d.get_size_bytes"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.size_chunks",
-        "deprecatedCommands": [
-          "d.get_size_chunks"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.size_files",
-        "deprecatedCommands": [
-          "d.get_size_files"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.size_pex",
-        "deprecatedCommands": [
-          "d.get_size_pex"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.skip.rate",
-        "deprecatedCommands": [
-          "d.get_skip_rate"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.skip.total",
-        "deprecatedCommands": [
-          "d.get_skip_total"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.state",
-        "deprecatedCommands": [
-          "d.get_state"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.state_changed",
-        "deprecatedCommands": [
-          "d.get_state_changed"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.state_counter",
-        "deprecatedCommands": [
-          "d.get_state_counter"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.throttle_name",
-        "deprecatedCommands": [
-          "d.get_throttle_name"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.tied_to_file",
-        "deprecatedCommands": [
-          "d.get_tied_to_file"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.timestamp.finished",
-        "deprecatedCommands": [
-          "-"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.timestamp.started",
-        "deprecatedCommands": [
-          "-"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.tracker_focus",
-        "deprecatedCommands": [
-          "d.get_tracker_focus"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.tracker_numwant",
-        "deprecatedCommands": [
-          "d.get_tracker_numwant"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.tracker_size",
-        "deprecatedCommands": [
-          "d.get_tracker_size"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.up.rate",
-        "deprecatedCommands": [
-          "d.get_up_rate"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.up.total",
-        "deprecatedCommands": [
-          "d.get_up_total"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "d.uploads_max",
-        "deprecatedCommands": [
-          "d.get_uploads_max"
-        ],
-        "description": "",
-        "type": "Variable"
-      }
-    ],
-    "command": [
-      {
-        "command": "d.check_hash",
-        "deprecatedCommands": [
-          ""
-        ],
-        "description": "Forces rehash",
-        "type": "Command"
-      },
-      {
-        "command": "d.connection_current.set",
-        "deprecatedCommands": [
-          "d.set_connection_current"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "d.custom.set",
-        "deprecatedCommands": [
-          "d.set_custom"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "d.custom1.set",
-        "deprecatedCommands": [
-          "d.set_custom1"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "d.custom2.set",
-        "deprecatedCommands": [
-          "d.set_custom2"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "d.custom3.set",
-        "deprecatedCommands": [
-          "d.set_custom3"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "d.custom4.set",
-        "deprecatedCommands": [
-          "d.set_custom4"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "d.custom5.set",
-        "deprecatedCommands": [
-          "d.set_custom5"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "d.directory.set",
-        "deprecatedCommands": [
-          "d.set_directory"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "d.directory_base.set",
-        "deprecatedCommands": [
-          "d.set_directory_base"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "d.hashing_failed.set",
-        "deprecatedCommands": [
-          "d.set_hashing_failed"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "d.ignore_commands.set",
-        "deprecatedCommands": [
-          "d.set_ignore_commands"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "d.max_file_size.set",
-        "deprecatedCommands": [
-          "d.set_max_file_size"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "d.message.set",
-        "deprecatedCommands": [
-          "d.set_message"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "d.peers_max.set",
-        "deprecatedCommands": [
-          "d.set_peers_max"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "d.peers_min.set",
-        "deprecatedCommands": [
-          "d.set_peers_min"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "d.priority.set",
-        "deprecatedCommands": [
-          "d.set_priority"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "d.start",
-        "deprecatedCommands": [
-          "-"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "d.stop",
-        "deprecatedCommands": [
-          "-"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "d.throttle_name.set",
-        "deprecatedCommands": [
-          "d.set_throttle_name"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "d.tied_to_file.set",
-        "deprecatedCommands": [
-          "d.set_tied_to_file"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "d.tracker_numwant.set",
-        "deprecatedCommands": [
-          "d.set_tracker_numwant"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "d.uploads_max.set",
-        "deprecatedCommands": [
-          "d.set_uploads_max"
-        ],
-        "description": "",
-        "type": "Command"
-      }
-    ]
+    "attributes": {
+      "variable": [
+        {
+          "command": "d.base_filename",
+          "deprecatedCommands": [
+            "d.get_base_filename"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.base_path",
+          "deprecatedCommands": [
+            "d.get_base_path"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.bitfield",
+          "deprecatedCommands": [
+            "d.get_bitfield"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.bytes_done",
+          "deprecatedCommands": [
+            "d.get_bytes_done"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.chunk_size",
+          "deprecatedCommands": [
+            "d.get_chunk_size"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.chunks_hashed",
+          "deprecatedCommands": [
+            "d.get_chunks_hashed"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.complete",
+          "deprecatedCommands": [
+            "d.get_complete"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.completed_bytes",
+          "deprecatedCommands": [
+            "d.get_completed_bytes"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.completed_chunks",
+          "deprecatedCommands": [
+            "d.get_completed_chunks"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.connection_current",
+          "deprecatedCommands": [
+            "d.get_connection_current"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.connection_leech",
+          "deprecatedCommands": [
+            "d.get_connection_leech"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.connection_seed",
+          "deprecatedCommands": [
+            "d.get_connection_seed"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.custom",
+          "deprecatedCommands": [
+            "d.get_custom"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.custom1",
+          "deprecatedCommands": [
+            "d.get_custom1"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.custom2",
+          "deprecatedCommands": [
+            "d.get_custom2"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.custom3",
+          "deprecatedCommands": [
+            "d.get_custom3"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.custom4",
+          "deprecatedCommands": [
+            "d.get_custom4"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.custom5",
+          "deprecatedCommands": [
+            "d.get_custom5"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.custom_throw",
+          "deprecatedCommands": [
+            "d.get_custom_throw"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.create_link",
+          "deprecatedCommands": [
+            "create_link"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.creation_date",
+          "deprecatedCommands": [
+            "d.get_creation_date"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.delete_link",
+          "deprecatedCommands": [
+            "delete_link"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.delete_tied",
+          "deprecatedCommands": [
+            "delete_tied"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.directory",
+          "deprecatedCommands": [
+            "d.get_directory"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.directory_base",
+          "deprecatedCommands": [
+            "d.get_directory_base"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.down.rate",
+          "deprecatedCommands": [
+            "d.get_down_rate"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.down.total",
+          "deprecatedCommands": [
+            "d.get_down_total"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.free_diskspace",
+          "deprecatedCommands": [
+            "d.get_free_diskspace"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.hash",
+          "deprecatedCommands": [
+            "d.get_hash"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.hashing",
+          "deprecatedCommands": [
+            "d.get_hashing"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.hashing_failed",
+          "deprecatedCommands": [
+            "d.get_hashing_failed"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.ignore_commands",
+          "deprecatedCommands": [
+            "d.get_ignore_commands"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.left_bytes",
+          "deprecatedCommands": [
+            "d.get_left_bytes"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.local_id",
+          "deprecatedCommands": [
+            "d.get_local_id"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.local_id_html",
+          "deprecatedCommands": [
+            "d.get_local_id_html"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.loaded_file",
+          "deprecatedCommands": [
+            "d.get_loaded_file"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.max_file_size",
+          "deprecatedCommands": [
+            "d.get_max_file_size"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.max_size_pex",
+          "deprecatedCommands": [
+            "d.get_max_size_pex"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.message",
+          "deprecatedCommands": [
+            "d.get_message"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.mode",
+          "deprecatedCommands": [
+            "d.get_mode"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.multicall2",
+          "deprecatedCommands": [
+            "d.multicall"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.name",
+          "deprecatedCommands": [
+            "d.get_name"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.peer_exchange",
+          "deprecatedCommands": [
+            "d.get_peer_exchange"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.peers_accounted",
+          "deprecatedCommands": [
+            "d.get_peers_accounted"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.peers_complete",
+          "deprecatedCommands": [
+            "d.get_peers_complete"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.peers_connected",
+          "deprecatedCommands": [
+            "d.get_peers_connected"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.peers_max",
+          "deprecatedCommands": [
+            "d.get_peers_max"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.peers_min",
+          "deprecatedCommands": [
+            "d.get_peers_min"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.peers_not_connected",
+          "deprecatedCommands": [
+            "d.get_peers_not_connected"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.priority",
+          "deprecatedCommands": [
+            "d.get_priority"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.priority_str",
+          "deprecatedCommands": [
+            "d.get_priority_str"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.ratio",
+          "deprecatedCommands": [
+            "d.get_ratio"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.size_bytes",
+          "deprecatedCommands": [
+            "d.get_size_bytes"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.size_chunks",
+          "deprecatedCommands": [
+            "d.get_size_chunks"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.size_files",
+          "deprecatedCommands": [
+            "d.get_size_files"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.size_pex",
+          "deprecatedCommands": [
+            "d.get_size_pex"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.skip.rate",
+          "deprecatedCommands": [
+            "d.get_skip_rate"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.skip.total",
+          "deprecatedCommands": [
+            "d.get_skip_total"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.state",
+          "deprecatedCommands": [
+            "d.get_state"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.state_changed",
+          "deprecatedCommands": [
+            "d.get_state_changed"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.state_counter",
+          "deprecatedCommands": [
+            "d.get_state_counter"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.throttle_name",
+          "deprecatedCommands": [
+            "d.get_throttle_name"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.tied_to_file",
+          "deprecatedCommands": [
+            "d.get_tied_to_file"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.timestamp.finished",
+          "deprecatedCommands": [
+            "-"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.timestamp.started",
+          "deprecatedCommands": [
+            "-"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.tracker_focus",
+          "deprecatedCommands": [
+            "d.get_tracker_focus"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.tracker_numwant",
+          "deprecatedCommands": [
+            "d.get_tracker_numwant"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.tracker_size",
+          "deprecatedCommands": [
+            "d.get_tracker_size"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.up.rate",
+          "deprecatedCommands": [
+            "d.get_up_rate"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.up.total",
+          "deprecatedCommands": [
+            "d.get_up_total"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "d.uploads_max",
+          "deprecatedCommands": [
+            "d.get_uploads_max"
+          ],
+          "description": "",
+          "type": "Variable"
+        }
+      ],
+      "command": [
+        {
+          "command": "d.check_hash",
+          "deprecatedCommands": [
+            ""
+          ],
+          "description": "Forces rehash",
+          "type": "Command"
+        },
+        {
+          "command": "d.connection_current.set",
+          "deprecatedCommands": [
+            "d.set_connection_current"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "d.custom.set",
+          "deprecatedCommands": [
+            "d.set_custom"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "d.custom1.set",
+          "deprecatedCommands": [
+            "d.set_custom1"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "d.custom2.set",
+          "deprecatedCommands": [
+            "d.set_custom2"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "d.custom3.set",
+          "deprecatedCommands": [
+            "d.set_custom3"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "d.custom4.set",
+          "deprecatedCommands": [
+            "d.set_custom4"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "d.custom5.set",
+          "deprecatedCommands": [
+            "d.set_custom5"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "d.directory.set",
+          "deprecatedCommands": [
+            "d.set_directory"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "d.directory_base.set",
+          "deprecatedCommands": [
+            "d.set_directory_base"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "d.hashing_failed.set",
+          "deprecatedCommands": [
+            "d.set_hashing_failed"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "d.ignore_commands.set",
+          "deprecatedCommands": [
+            "d.set_ignore_commands"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "d.max_file_size.set",
+          "deprecatedCommands": [
+            "d.set_max_file_size"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "d.message.set",
+          "deprecatedCommands": [
+            "d.set_message"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "d.peers_max.set",
+          "deprecatedCommands": [
+            "d.set_peers_max"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "d.peers_min.set",
+          "deprecatedCommands": [
+            "d.set_peers_min"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "d.priority.set",
+          "deprecatedCommands": [
+            "d.set_priority"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "d.start",
+          "deprecatedCommands": [
+            "-"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "d.stop",
+          "deprecatedCommands": [
+            "-"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "d.throttle_name.set",
+          "deprecatedCommands": [
+            "d.set_throttle_name"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "d.tied_to_file.set",
+          "deprecatedCommands": [
+            "d.set_tied_to_file"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "d.tracker_numwant.set",
+          "deprecatedCommands": [
+            "d.set_tracker_numwant"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "d.uploads_max.set",
+          "deprecatedCommands": [
+            "d.set_uploads_max"
+          ],
+          "description": "",
+          "type": "Command"
+        }
+      ]
+    }
   },
   "trackers": {
     "header": "Trackers",
-    "variable": [
-      {
-        "command": "t.group",
-        "deprecatedCommands": [
-          "t.get_group"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "t.id",
-        "deprecatedCommands": [
-          "t.get_id"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "t.min_interval",
-        "deprecatedCommands": [
-          "t.get_min_interval"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "t.normal_interval",
-        "deprecatedCommands": [
-          "t.get_normal_interval"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "t.scrape_complete",
-        "deprecatedCommands": [
-          "t.get_scrape_complete"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "t.scrape_downloaded",
-        "deprecatedCommands": [
-          "t.get_scrape_downloaded"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "t.scrape_incomplete",
-        "deprecatedCommands": [
-          "t.get_scrape_incomplete"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "t.scrape_time_last",
-        "deprecatedCommands": [
-          "t.get_scrape_time_last"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "t.type",
-        "deprecatedCommands": [
-          "t.get_type"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "t.url",
-        "deprecatedCommands": [
-          "t.get_url"
-        ],
-        "description": "",
-        "type": "Variable"
-      }
-    ],
-    "command": [
-      {
-        "command": "t.is_enabled.set",
-        "deprecatedCommands": [
-          "t.set_enabled"
-        ],
-        "description": "",
-        "type": "Command"
-      }
-    ]
+    "attributes": {
+      "variable": [
+        {
+          "command": "t.group",
+          "deprecatedCommands": [
+            "t.get_group"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "t.id",
+          "deprecatedCommands": [
+            "t.get_id"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "t.min_interval",
+          "deprecatedCommands": [
+            "t.get_min_interval"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "t.normal_interval",
+          "deprecatedCommands": [
+            "t.get_normal_interval"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "t.scrape_complete",
+          "deprecatedCommands": [
+            "t.get_scrape_complete"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "t.scrape_downloaded",
+          "deprecatedCommands": [
+            "t.get_scrape_downloaded"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "t.scrape_incomplete",
+          "deprecatedCommands": [
+            "t.get_scrape_incomplete"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "t.scrape_time_last",
+          "deprecatedCommands": [
+            "t.get_scrape_time_last"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "t.type",
+          "deprecatedCommands": [
+            "t.get_type"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "t.url",
+          "deprecatedCommands": [
+            "t.get_url"
+          ],
+          "description": "",
+          "type": "Variable"
+        }
+      ],
+      "command": [
+        {
+          "command": "t.is_enabled.set",
+          "deprecatedCommands": [
+            "t.set_enabled"
+          ],
+          "description": "",
+          "type": "Command"
+        }
+      ]
+    }
   },
   "files": {
     "header": "Files",
-    "variable": [
-      {
-        "command": "f.completed_chunks",
-        "deprecatedCommands": [
-          "f.get_completed_chunks"
-        ],
-        "description": "Get the chunks that already downloaded",
-        "type": "Variable"
-      },
-      {
-        "command": "f.frozen_path",
-        "deprecatedCommands": [
-          "f.get_frozen_path"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "f.last_touched",
-        "deprecatedCommands": [
-          "f.get_last_touched"
-        ],
-        "description": "Last time the file was touched in seconds since 1970",
-        "type": "Variable"
-      },
-      {
-        "command": "f.match_depth_next",
-        "deprecatedCommands": [
-          "f.get_match_depth_next"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "f.match_depth_prev",
-        "deprecatedCommands": [
-          "f.get_match_depth_prev"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "f.offset",
-        "deprecatedCommands": [
-          "f.get_offset"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "f.path",
-        "deprecatedCommands": [
-          "f.get_path"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "f.path_components",
-        "deprecatedCommands": [
-          "f.get_path_components"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "f.path_depth",
-        "deprecatedCommands": [
-          "f.get_path_depth"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "f.priority",
-        "deprecatedCommands": [
-          "f.get_priority"
-        ],
-        "description": "Get the priority (0=do not download, 1=normal, 2=high)",
-        "type": "Variable"
-      },
-      {
-        "command": "f.range_first",
-        "deprecatedCommands": [
-          "f.get_range_first"
-        ],
-        "description": "Get the chunk range start",
-        "type": "Variable"
-      },
-      {
-        "command": "f.range_second",
-        "deprecatedCommands": [
-          "f.get_range_second"
-        ],
-        "description": "Get the chunk range end",
-        "type": "Variable"
-      },
-      {
-        "command": "f.size_bytes",
-        "deprecatedCommands": [
-          "f.get_size_bytes"
-        ],
-        "description": "Get the size of the file in bytes",
-        "type": "Variable"
-      },
-      {
-        "command": "f.size_chunks",
-        "deprecatedCommands": [
-          "f.get_size_chunks"
-        ],
-        "description": "Get the size of the file in chunks",
-        "type": "Variable"
-      },
-      {
-        "command": "f.priority.set",
-        "deprecatedCommands": [
-          "f.set_priority"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "fi.filename_last",
-        "deprecatedCommands": [
-          "fi.get_filename_last"
-        ],
-        "description": "",
-        "type": "Variable"
-      }
-    ]
+    "attributes": {
+      "variable": [
+        {
+          "command": "f.completed_chunks",
+          "deprecatedCommands": [
+            "f.get_completed_chunks"
+          ],
+          "description": "Get the chunks that already downloaded",
+          "type": "Variable"
+        },
+        {
+          "command": "f.frozen_path",
+          "deprecatedCommands": [
+            "f.get_frozen_path"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "f.last_touched",
+          "deprecatedCommands": [
+            "f.get_last_touched"
+          ],
+          "description": "Last time the file was touched in seconds since 1970",
+          "type": "Variable"
+        },
+        {
+          "command": "f.match_depth_next",
+          "deprecatedCommands": [
+            "f.get_match_depth_next"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "f.match_depth_prev",
+          "deprecatedCommands": [
+            "f.get_match_depth_prev"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "f.offset",
+          "deprecatedCommands": [
+            "f.get_offset"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "f.path",
+          "deprecatedCommands": [
+            "f.get_path"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "f.path_components",
+          "deprecatedCommands": [
+            "f.get_path_components"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "f.path_depth",
+          "deprecatedCommands": [
+            "f.get_path_depth"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "f.priority",
+          "deprecatedCommands": [
+            "f.get_priority"
+          ],
+          "description": "Get the priority (0=do not download, 1=normal, 2=high)",
+          "type": "Variable"
+        },
+        {
+          "command": "f.range_first",
+          "deprecatedCommands": [
+            "f.get_range_first"
+          ],
+          "description": "Get the chunk range start",
+          "type": "Variable"
+        },
+        {
+          "command": "f.range_second",
+          "deprecatedCommands": [
+            "f.get_range_second"
+          ],
+          "description": "Get the chunk range end",
+          "type": "Variable"
+        },
+        {
+          "command": "f.size_bytes",
+          "deprecatedCommands": [
+            "f.get_size_bytes"
+          ],
+          "description": "Get the size of the file in bytes",
+          "type": "Variable"
+        },
+        {
+          "command": "f.size_chunks",
+          "deprecatedCommands": [
+            "f.get_size_chunks"
+          ],
+          "description": "Get the size of the file in chunks",
+          "type": "Variable"
+        },
+        {
+          "command": "f.priority.set",
+          "deprecatedCommands": [
+            "f.set_priority"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "fi.filename_last",
+          "deprecatedCommands": [
+            "fi.get_filename_last"
+          ],
+          "description": "",
+          "type": "Variable"
+        }
+      ]
+    }
   },
   "peers": {
     "header": "Peers",
-    "variable": [
-      {
-        "command": "p.address",
-        "deprecatedCommands": [
-          "p.get_address"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "p.client_version",
-        "deprecatedCommands": [
-          "p.get_client_version"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "p.completed_percent",
-        "deprecatedCommands": [
-          "p.get_completed_percent"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "p.down_rate",
-        "deprecatedCommands": [
-          "p.get_down_rate"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "p.down_total",
-        "deprecatedCommands": [
-          "p.get_down_total"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "p.id",
-        "deprecatedCommands": [
-          "p.get_id"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "p.id_html",
-        "deprecatedCommands": [
-          "p.get_id_html"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "p.options_str",
-        "deprecatedCommands": [
-          "p.get_options_str"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "p.peer_rate",
-        "deprecatedCommands": [
-          "p.get_peer_rate"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "p.peer_total",
-        "deprecatedCommands": [
-          "p.get_peer_total"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "p.port",
-        "deprecatedCommands": [
-          "p.get_port"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "p.up_rate",
-        "deprecatedCommands": [
-          "p.get_up_rate"
-        ],
-        "description": "",
-        "type": "Variable"
-      },
-      {
-        "command": "p.up_total",
-        "deprecatedCommands": [
-          "p.get_up_total"
-        ],
-        "description": "",
-        "type": "Variable"
-      }
-    ]
+    "attributes": {
+      "variable": [
+        {
+          "command": "p.address",
+          "deprecatedCommands": [
+            "p.get_address"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "p.client_version",
+          "deprecatedCommands": [
+            "p.get_client_version"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "p.completed_percent",
+          "deprecatedCommands": [
+            "p.get_completed_percent"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "p.down_rate",
+          "deprecatedCommands": [
+            "p.get_down_rate"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "p.down_total",
+          "deprecatedCommands": [
+            "p.get_down_total"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "p.id",
+          "deprecatedCommands": [
+            "p.get_id"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "p.id_html",
+          "deprecatedCommands": [
+            "p.get_id_html"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "p.options_str",
+          "deprecatedCommands": [
+            "p.get_options_str"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "p.peer_rate",
+          "deprecatedCommands": [
+            "p.get_peer_rate"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "p.peer_total",
+          "deprecatedCommands": [
+            "p.get_peer_total"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "p.port",
+          "deprecatedCommands": [
+            "p.get_port"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "p.up_rate",
+          "deprecatedCommands": [
+            "p.get_up_rate"
+          ],
+          "description": "",
+          "type": "Variable"
+        },
+        {
+          "command": "p.up_total",
+          "deprecatedCommands": [
+            "p.get_up_total"
+          ],
+          "description": "",
+          "type": "Variable"
+        }
+      ]
+    }
   },
   "views": {
     "header": "Views",
-    "command": [
-      {
-        "command": "view.add",
-        "deprecatedCommands": [
-          "view_add"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "view.filter",
-        "deprecatedCommands": [
-          "view_filter"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "view.filter_on",
-        "deprecatedCommands": [
-          "view_filter_on"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "view.list",
-        "deprecatedCommands": [
-          "view_list"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "view.set",
-        "deprecatedCommands": [
-          "view_set"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "view.sort",
-        "deprecatedCommands": [
-          "view_sort"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "view.sort_current",
-        "deprecatedCommands": [
-          "view_sort_current"
-        ],
-        "description": "",
-        "type": "Command"
-      },
-      {
-        "command": "view.sort_new",
-        "deprecatedCommands": [
-          "view_sort_new"
-        ],
-        "description": "",
-        "type": "Command"
-      }
-    ]
+    "attributes": {
+      "command": [
+        {
+          "command": "view.add",
+          "deprecatedCommands": [
+            "view_add"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "view.filter",
+          "deprecatedCommands": [
+            "view_filter"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "view.filter_on",
+          "deprecatedCommands": [
+            "view_filter_on"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "view.list",
+          "deprecatedCommands": [
+            "view_list"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "view.set",
+          "deprecatedCommands": [
+            "view_set"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "view.sort",
+          "deprecatedCommands": [
+            "view_sort"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "view.sort_current",
+          "deprecatedCommands": [
+            "view_sort_current"
+          ],
+          "description": "",
+          "type": "Command"
+        },
+        {
+          "command": "view.sort_new",
+          "deprecatedCommands": [
+            "view_sort_new"
+          ],
+          "description": "",
+          "type": "Command"
+        }
+      ]
+    }
   }
 }
