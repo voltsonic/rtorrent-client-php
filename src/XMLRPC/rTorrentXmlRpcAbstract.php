@@ -30,8 +30,9 @@ abstract class rTorrentXmlRpcAbstract implements rTorrentXmlRpcInterface {
     ){
         if(empty($method))
             throw new ErrorException("Method cannot be empty (::callMethod).");
-        if(empty($array_pointer))
-            throw new ErrorException("Missing iterate keys (::callArrayPointer) or overwriting run.");
+        // TODO: re-enable me when all array_pointers are setup.
+//        if(empty($array_pointer))
+//            throw new ErrorException("Missing iterate keys (::callArrayPointer) or overwriting run.");
 
         $ResponseRPC = $this->api->rpc($method, $params, $stream, $xmlrpc_output_options);
 
