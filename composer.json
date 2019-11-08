@@ -1,0 +1,25 @@
+{
+  "name": "voltsonic/rtorrent-client",
+  "description": "yet another rtorrent wrapper",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "voltsonic",
+      "email": "6464019+voltsonic@users.noreply.github.com"
+    }
+  ],
+  "require": {
+    "ext-json": "*",
+    "ext-simplexml": "*",
+    "ext-xmlreader": "*",
+    "ext-xmlrpc": "*",
+    "guzzlehttp/guzzle": "^6.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Voltsonic\\rTorrent\\": "src/"
+    }
+  },
+  "version": "0.0.1"
+}

@@ -1,0 +1,13 @@
+<svg width="107.4" height="20" viewBox="0 0 1074 200" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <rect fill="#555" width="349" height="200"/>
+    <rect fill="#08C" x="349" width="725" height="200"/>
+  </g>
+  <g fill="#fff" text-anchor="start" font-family="Verdana,DejaVu Sans,sans-serif" font-size="110">
+    <text x="60" y="148" textLength="249" fill="#000" opacity="0.1">repo</text>
+    <text x="50" y="138" textLength="249">repo</text>
+    <text x="404" y="148" textLength="625" fill="#000" opacity="0.1">github.com</text>
+    <text x="394" y="138" textLength="625">github.com</text>
+  </g>
+  
+</svg>

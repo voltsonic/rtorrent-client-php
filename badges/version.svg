@@ -1,0 +1,13 @@
+<svg width="69.4" height="20" viewBox="0 0 694 200" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <rect fill="#555" width="304" height="200"/>
+    <rect fill="#08C" x="304" width="390" height="200"/>
+  </g>
+  <g fill="#fff" text-anchor="start" font-family="Verdana,DejaVu Sans,sans-serif" font-size="110">
+    <text x="60" y="148" textLength="204" fill="#000" opacity="0.1">app</text>
+    <text x="50" y="138" textLength="204">app</text>
+    <text x="359" y="148" textLength="290" fill="#000" opacity="0.1">0.0.1</text>
+    <text x="349" y="138" textLength="290">0.0.1</text>
+  </g>
+  
+</svg>

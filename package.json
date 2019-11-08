@@ -1,0 +1,43 @@
+{
+  "name": "rtorrent-client-php",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/voltsonic/rtorrent-client-php.git"
+  },
+  "author": "voltsonic",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/voltsonic/rtorrent-client-php/issues"
+  },
+  "homepage": "https://github.com/voltsonic/rtorrent-client-php#readme",
+  "devDependencies": {
+    "badge-management": "^1.0.2",
+    "version-management": "^1.0.7"
+  },
+  "badges": {
+    "injectors": {
+      "README.md": [
+        {
+          "definitions": [
+            "repository",
+            "version"
+          ]
+        }
+      ]
+    },
+    "definitions": {
+      "version": {
+        "type": "package_version"
+      },
+      "repository": {
+        "type": "package_repository_url"
+      }
+    }
+  }
+}
