@@ -29,10 +29,13 @@ $buildCommandFunction = function($command){
 
 foreach($Templates as $groupKey => $groupData){
     $classesTotal++;
-    $className = $BaseClassCommands.str_replace('_header_', ucwords($groupKey), $TemplateCommand);
+    $groupKey = ucwords(preg_replace("/[^0-9a-z]+/i", ' ', $groupKey));
+    while(strpos($groupKey, ' '))
+        $groupKey = str_replace(' ', '', $groupKey);
+    $className = $BaseClassCommands.str_replace('_header_', $groupKey, $TemplateCommand);
     $hasClass = class_exists($className);
     if(!$hasClass) $classesMissing++;
-    $missingFuncs = false;
+    $missingAny = false;
     ob_start();
 
     $commandsTotal += empty($groupData['attributes']['command'])?0:count($groupData['attributes']['command']);
@@ -44,7 +47,7 @@ foreach($Templates as $groupKey => $groupData){
                 $cmd = $buildCommandFunction($command['command']);
                 $methodAvailable = method_exists($className, $cmd);
                 if(!$methodAvailable){
-                    $missingFuncs = true;
+                    $missingAny = true;
                     $commandsMissing++;
                 } 
                 print '    | ['.($methodAvailable?'x':' ').'] ->'.$cmd.PHP_EOL;
@@ -55,6 +58,7 @@ foreach($Templates as $groupKey => $groupData){
                 $cmd = 'var'.ucwords($buildCommandFunction($variable['command']));
                 $methodAvailable = method_exists($className, $cmd);
                 if(!$methodAvailable){
+                    $missingAny = true;
                     $variablesMissing++;
                 }
                 print '    | ['.($methodAvailable?'x':' ').'] ->'.$cmd.PHP_EOL;
@@ -68,7 +72,7 @@ foreach($Templates as $groupKey => $groupData){
 
     $c = ob_get_contents();
     ob_end_clean();
-    print '['.($missingFuncs?'-':($hasClass?'x':' ')).'] '.$className.PHP_EOL;
+    print '['.($missingAny?'-':($hasClass?'x':' ')).'] '.$className.PHP_EOL;
     print $c;
 }
 
