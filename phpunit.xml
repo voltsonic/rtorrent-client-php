@@ -1,0 +1,7 @@
+<phpunit bootstrap="bootstrap.php">
+    <testsuites>
+        <testsuite name="Master Tests">
+            <file>tests/Client/XMLRPC/SystemCommandsTest.php</file>
+        </testsuite>
+    </testsuites>
+</phpunit>
