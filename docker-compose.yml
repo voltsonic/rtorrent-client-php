@@ -1,7 +1,7 @@
 version: '3.7'
 services:
   # This is not intended for a production setup. This is only meant for development/testing.
-  torrent-client:
+  box:
     privileged: true
     image: diameter/rtorrent-rutorrent:stable-alpine
     environment:
