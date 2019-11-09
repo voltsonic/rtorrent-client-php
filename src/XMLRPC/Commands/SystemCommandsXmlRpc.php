@@ -6,14 +6,13 @@ use ErrorException;
 use Voltsonic\rTorrent\XMLRPC\rTorrentXmlRpcAbstract;
 
 class SystemCommandsXmlRpc extends rTorrentXmlRpcAbstract {
+    protected $methodPrefix = 'system';
     /**
      * @param callable $callbackMethod
      * @param bool $disableStream
      * @throws ErrorException
      */
     public function listMethods(callable $callbackMethod, $disableStream = false){
-        $this->run(function($item) use($callbackMethod) {
-            $callbackMethod($item);
-        }, 'system.listMethods', ['methodResponse', 'params', 'param', 'value', 'array', 'data', 'value'    ], [], !$disableStream);
+        $this->runArray($this->cmd('listMethods'), $callbackMethod, [], $disableStream);
     }
 }
