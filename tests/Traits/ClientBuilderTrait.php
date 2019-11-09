@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace VoltsonicTests\Client\XMLRPC;
+namespace VoltsonicTests\Traits;
 
 use Voltsonic\rTorrent\rTorrentClient;
 

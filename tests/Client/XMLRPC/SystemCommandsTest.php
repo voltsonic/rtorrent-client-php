@@ -5,6 +5,7 @@ namespace VoltsonicTests\Client\XMLRPC;
 
 use ErrorException;
 use PHPUnit\Framework\TestCase;
+use VoltsonicTests\Traits\ClientBuilderTrait;
 
 final class SystemCommandsTest extends TestCase {
     use ClientBuilderTrait;
