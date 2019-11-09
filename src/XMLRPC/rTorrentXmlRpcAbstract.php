@@ -5,9 +5,11 @@ namespace Voltsonic\rTorrent\XMLRPC;
 use ErrorException;
 use Voltsonic\rTorrent\Guzzle\RequestRPC;
 use Voltsonic\rTorrent\rTorrentClient;
+use Voltsonic\rTorrent\Statics\XMLRPC\ResponsesXmlRpcStatics;
 
 abstract class rTorrentXmlRpcAbstract implements rTorrentXmlRpcInterface {
     protected $methodPrefix = '';
+
     /**
      * @var rTorrentClient
      */
@@ -28,14 +30,14 @@ abstract class rTorrentXmlRpcAbstract implements rTorrentXmlRpcInterface {
     public function run(
         callable $item,
         string $method,
-        array $array_pointer,
         $params = [],
+        array $array_pointer = ResponsesXmlRpcStatics::STANDARD_ARRAY,
         bool $stream = true,
         array $xmlrpc_output_options = []
     ){
         if(empty($method))
             throw new ErrorException("Method cannot be empty (::callMethod).");
-        // TODO: re-enable me when all array_pointers are setup.
+        // TODO: re-enable and fix me when all array_pointers are setup.
 //        if(empty($array_pointer))
 //            throw new ErrorException("Missing iterate keys (::callArrayPointer) or overwriting run.");
 
@@ -47,5 +49,18 @@ abstract class rTorrentXmlRpcAbstract implements rTorrentXmlRpcInterface {
         $ResponseRPC->pull($item, $array_pointer);
 
         return false;
+    }
+
+    /**
+     * @param string $method
+     * @param callable $callbackMethod
+     * @param array $params
+     * @param bool $disableStream
+     * @throws ErrorException
+     */
+    public function runArray(string $method, callable $callbackMethod, $params = [], $disableStream = false){
+        $this->run(function($item) use($callbackMethod) {
+            $callbackMethod($item);
+        }, $method, $params, ResponsesXmlRpcStatics::STANDARD_ARRAY, !$disableStream);
     }
 }
