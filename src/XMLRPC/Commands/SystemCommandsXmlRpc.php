@@ -15,4 +15,20 @@ class SystemCommandsXmlRpc extends rTorrentXmlRpcAbstract {
     public function listMethods(callable $callbackMethod, $disableStream = false){
         $this->runArray($this->cmd('listMethods'), $callbackMethod, [], $disableStream);
     }
+
+    /**
+     * @param callable $callbackMethod
+     * @throws ErrorException
+     */
+    public function shutdown_Normal(callable $callbackMethod){
+        $this->runArray($this->cmd('shutdown.normal'), $callbackMethod, [], true);
+    }
+
+    /**
+     * @param callable $callbackMethod
+     * @throws ErrorException
+     */
+    public function shutdown_Quick(callable $callbackMethod){
+        $this->runArray($this->cmd('shutdown.quick'), $callbackMethod, [], true);
+    }
 }
