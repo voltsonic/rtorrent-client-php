@@ -63,4 +63,17 @@ abstract class rTorrentXmlRpcAbstract implements rTorrentXmlRpcInterface {
             $callbackMethod($item);
         }, $method, $params, ResponsesXmlRpcStatics::STANDARD_ARRAY, !$disableStream);
     }
+
+    /**
+     * @param string $method
+     * @param callable $callbackMethod
+     * @param array $params
+     * @param bool $disableStream
+     * @throws ErrorException
+     */
+    public function runSingle(string $method, callable $callbackMethod, $params = [], $disableStream = false){
+        $this->run(function($item) use($callbackMethod) {
+            $callbackMethod($item);
+        }, $method, $params, ResponsesXmlRpcStatics::STANDARD_SINGLE, !$disableStream);
+    }
 }
