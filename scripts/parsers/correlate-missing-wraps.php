@@ -74,9 +74,9 @@ foreach($Templates as $groupKey => $groupData){
     ob_end_clean();
     print '['.($missingAny?'-':($hasClass?'x':' ')).'] '.$className.PHP_EOL;
     print $c;
+    print PHP_EOL;
 }
 
-print PHP_EOL;
 print 'Missing Classes: '.number_format($classesMissing).' / '.number_format($classesTotal).PHP_EOL;
 print 'Missing Commands: '.number_format($commandsMissing).' / '.number_format($commandsTotal).PHP_EOL;
 print 'Missing Variables: '.number_format($variablesMissing).' / '.number_format($variablesTotal).PHP_EOL;
