@@ -1,0 +1,25 @@
+version: '3.7'
+services:
+  # This is not intended for a production setup. This is only meant for development/testing.
+  torrent-client:
+    privileged: true
+    image: diameter/rtorrent-rutorrent:stable-alpine
+    environment:
+      USR_ID: "1000"
+      GRP_ID: "1000"
+      NOIPV6: "1"
+    ports:
+      - "${WEB_HTTP:-9000}:80"
+      - "${WEB_HTTPS:-9001}:443"
+      - "${RTORRENT_PORT_49160:-49160}:49160"
+      - "${RTORRENT_PORT_49161:-49161}:49161"
+    networks:
+      - voltnet-dev
+    volumes:
+      - volthdd-dev:/downloads
+
+networks:
+  voltnet-dev:
+
+volumes:
+  volthdd-dev:
