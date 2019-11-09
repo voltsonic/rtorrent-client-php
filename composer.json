@@ -14,11 +14,13 @@
     "ext-simplexml": "*",
     "ext-xmlreader": "*",
     "ext-xmlrpc": "*",
-    "guzzlehttp/guzzle": "^6.4"
+    "guzzlehttp/guzzle": "^6.4",
+    "vlucas/phpdotenv": "^3.6"
   },
   "autoload": {
     "psr-4": {
-      "Voltsonic\\rTorrent\\": "src/"
+      "Voltsonic\\rTorrent\\": "src/",
+      "VoltsonicTests\\": "tests/"
     }
   },
   "version": "0.0.1",
