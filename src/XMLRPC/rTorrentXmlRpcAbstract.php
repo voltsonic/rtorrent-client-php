@@ -7,6 +7,7 @@ use Voltsonic\rTorrent\Guzzle\RequestRPC;
 use Voltsonic\rTorrent\rTorrentClient;
 
 abstract class rTorrentXmlRpcAbstract implements rTorrentXmlRpcInterface {
+    protected $methodPrefix = '';
     /**
      * @var rTorrentClient
      */
@@ -15,6 +16,10 @@ abstract class rTorrentXmlRpcAbstract implements rTorrentXmlRpcInterface {
     public function __construct(RequestRPC $requestRPC)
     {
         $this->api = $requestRPC;
+    }
+
+    protected function cmd(string $method){
+        return (empty($this->methodPrefix)?'':($this->methodPrefix.'.')).$method;
     }
 
     /**
