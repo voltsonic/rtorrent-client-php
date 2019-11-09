@@ -3,6 +3,7 @@
 namespace Voltsonic\rTorrent\XMLRPC;
 
 use ErrorException;
+use Voltsonic\rTorrent\Statics\XMLRPC\ResponsesXmlRpcStatics;
 
 interface rTorrentXmlRpcInterface {
     /**
@@ -10,8 +11,8 @@ interface rTorrentXmlRpcInterface {
      *
      * @param callable $item
      * @param string $method
-     * @param array $array_pointer
      * @param array $params
+     * @param array $array_pointer
      * @param bool $stream
      * @param array $xmlrpc_output_options
      * @throws ErrorException
@@ -19,8 +20,8 @@ interface rTorrentXmlRpcInterface {
     public function run(
         callable $item,
         string $method,
-        array $array_pointer,
         $params = [],
+        array $array_pointer = ResponsesXmlRpcStatics::STANDARD_ARRAY,
         bool $stream = true,
         array $xmlrpc_output_options = []
     );
