@@ -6,20 +6,20 @@ namespace VoltsonicTests\Client\XMLRPC;
 use ErrorException;
 use PHPUnit\Framework\TestCase;
 use VoltsonicTests\Traits\ClientBuilderTrait;
+use VoltsonicTests\Traits\ClientGenericResponsesTrait;
 use VoltsonicTests\Traits\ClientRebootTrait;
 
 final class SystemCommandsTest extends TestCase {
     use ClientBuilderTrait;
     use ClientRebootTrait;
+    use ClientGenericResponsesTrait;
 
     /**
      * @throws ErrorException
      */
     public function testShutdownQuick(){
-        $completeCode = false;
-        $this->torrentClient()->commands_System
-            ->shutdown_Quick(function($complete) use(&$completeCode) { $completeCode = $complete; });
-        $this->assertTrue($completeCode == 0, 'Code: '.$completeCode);
+        $this->torrentClient()->commands_System->shutdown_Quick($this->responseCode($completeCode));
+        $this->responseCodeAssert($completeCode);
         $this->torrentReboot();
     }
 
@@ -27,10 +27,8 @@ final class SystemCommandsTest extends TestCase {
      * @throws ErrorException
      */
     public function testShutdownNormal(){
-        $completeCode = false;
-        $this->torrentClient()->commands_System
-            ->shutdown_Normal(function($complete) use(&$completeCode) { $completeCode = $complete; });
-        $this->assertTrue($completeCode == 0, 'Code: '.$completeCode);
+        $this->torrentClient()->commands_System->shutdown_Normal($this->responseCode($completeCode));
+        $this->responseCodeAssert($completeCode);
         $this->torrentReboot();
     }
 
