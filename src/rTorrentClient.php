@@ -3,7 +3,7 @@
 namespace Voltsonic\rTorrent;
 
 use Voltsonic\rTorrent\Guzzle\RequestRPC;
-use Voltsonic\rTorrent\XMLRPC\Commands\SystemCommandsXmlRpc;
+use Voltsonic\rTorrent\XMLRPC\Api\SystemApiXmlRpc;
 
 /**
  * Class rTorrentClient
@@ -15,7 +15,7 @@ class rTorrentClient {
      */
     public $api;
     /**
-     * @var SystemCommandsXmlRpc
+     * @var SystemApiXmlRpc
      */
     public $commands_System;
 
@@ -40,6 +40,6 @@ class rTorrentClient {
             $tempfilePrefix
         );
 
-        $this->commands_System = new SystemCommandsXmlRpc($this->api);
+        $this->commands_System = new SystemApiXmlRpc($this->api);
     }
 }
