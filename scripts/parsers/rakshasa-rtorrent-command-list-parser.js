@@ -18,7 +18,20 @@ let flushItem = (header, commands, final = false) => {
                 header,
                 attributes: {}
             };
+
+            let commandsCombined = [];
+            let commandsMap = {};
             for(let command of commands){
+                if(commandsMap.hasOwnProperty(command.command)){
+                    for(let dCmd of command.deprecatedCommands)
+                        commandsCombined[commandsMap[command.command]].deprecatedCommands.push(dCmd);
+                }else{
+                    commandsCombined.push(command);
+                    commandsMap[command.command] = (commandsCombined.length - 1);
+                }
+            }
+
+            for(let command of commandsCombined){
                 let type = command.type.toLowerCase();
                 if(!info.attributes.hasOwnProperty(type))
                     info.attributes[type] = [];

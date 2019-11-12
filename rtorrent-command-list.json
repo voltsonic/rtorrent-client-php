@@ -167,17 +167,10 @@
         {
           "command": "directory.default.set",
           "deprecatedCommands": [
-            "directory"
-          ],
-          "description": "Sets the default directory for downloaded torrent data",
-          "type": "Command"
-        },
-        {
-          "command": "directory.default.set",
-          "deprecatedCommands": [
+            "directory",
             "set_directory"
           ],
-          "description": "Same as above",
+          "description": "Sets the default directory for downloaded torrent data",
           "type": "Command"
         }
       ]
@@ -368,14 +361,7 @@
         {
           "command": "protocol.connection.leech.set",
           "deprecatedCommands": [
-            "connection_leech"
-          ],
-          "description": "",
-          "type": "Command"
-        },
-        {
-          "command": "protocol.connection.leech.set",
-          "deprecatedCommands": [
+            "connection_leech",
             "set_connection_leech"
           ],
           "description": "",
@@ -384,14 +370,7 @@
         {
           "command": "protocol.connection.seed.set",
           "deprecatedCommands": [
-            "connection_seed"
-          ],
-          "description": "",
-          "type": "Command"
-        },
-        {
-          "command": "protocol.connection.seed.set",
-          "deprecatedCommands": [
+            "connection_seed",
             "set_connection_seed"
           ],
           "description": "",
@@ -408,14 +387,7 @@
         {
           "command": "protocol.pex.set",
           "deprecatedCommands": [
-            "peer_exchange"
-          ],
-          "description": "",
-          "type": "Command"
-        },
-        {
-          "command": "protocol.pex.set",
-          "deprecatedCommands": [
+            "peer_exchange",
             "set_peer_exchange"
           ],
           "description": "",
@@ -521,14 +493,7 @@
         {
           "command": "pieces.memory.max.set",
           "deprecatedCommands": [
-            "max_memory_usage"
-          ],
-          "description": "",
-          "type": "Command"
-        },
-        {
-          "command": "pieces.memory.max.set",
-          "deprecatedCommands": [
+            "max_memory_usage",
             "set_max_memory_usage"
           ],
           "description": "",
@@ -537,14 +502,7 @@
         {
           "command": "pieces.hash.on_completion.set",
           "deprecatedCommands": [
-            "check_hash"
-          ],
-          "description": "",
-          "type": "Command"
-        },
-        {
-          "command": "pieces.hash.on_completion.set",
-          "deprecatedCommands": [
+            "check_hash",
             "set_check_hash"
           ],
           "description": "",
@@ -842,14 +800,7 @@
         {
           "command": "throttle.max_downloads.div.set",
           "deprecatedCommands": [
-            "max_downloads_div"
-          ],
-          "description": "",
-          "type": "Command"
-        },
-        {
-          "command": "throttle.max_downloads.div.set",
-          "deprecatedCommands": [
+            "max_downloads_div",
             "set_max_downloads_div"
           ],
           "description": "",
@@ -858,14 +809,7 @@
         {
           "command": "throttle.max_downloads.global.set",
           "deprecatedCommands": [
-            "max_downloads_global"
-          ],
-          "description": "",
-          "type": "Command"
-        },
-        {
-          "command": "throttle.max_downloads.global.set",
-          "deprecatedCommands": [
+            "max_downloads_global",
             "set_max_downloads_global"
           ],
           "description": "",
@@ -874,14 +818,7 @@
         {
           "command": "throttle.max_peers.normal.set",
           "deprecatedCommands": [
-            "max_peers"
-          ],
-          "description": "",
-          "type": "Command"
-        },
-        {
-          "command": "throttle.max_peers.normal.set",
-          "deprecatedCommands": [
+            "max_peers",
             "set_max_peers"
           ],
           "description": "",
@@ -890,14 +827,7 @@
         {
           "command": "throttle.max_peers.seed.set",
           "deprecatedCommands": [
-            "max_peers_seed"
-          ],
-          "description": "",
-          "type": "Command"
-        },
-        {
-          "command": "throttle.max_peers.seed.set",
-          "deprecatedCommands": [
+            "max_peers_seed",
             "set_max_peers_seed"
           ],
           "description": "",
@@ -906,14 +836,7 @@
         {
           "command": "throttle.max_uploads.set",
           "deprecatedCommands": [
-            "max_uploads"
-          ],
-          "description": "",
-          "type": "Command"
-        },
-        {
-          "command": "throttle.max_uploads.set",
-          "deprecatedCommands": [
+            "max_uploads",
             "set_max_uploads"
           ],
           "description": "",
@@ -922,14 +845,7 @@
         {
           "command": "throttle.max_uploads.div.set",
           "deprecatedCommands": [
-            "max_uploads_div"
-          ],
-          "description": "",
-          "type": "Command"
-        },
-        {
-          "command": "throttle.max_uploads.div.set",
-          "deprecatedCommands": [
+            "max_uploads_div",
             "set_max_uploads_div"
           ],
           "description": "",
@@ -938,14 +854,7 @@
         {
           "command": "throttle.max_uploads.global.set",
           "deprecatedCommands": [
-            "max_uploads_global"
-          ],
-          "description": "",
-          "type": "Command"
-        },
-        {
-          "command": "throttle.max_uploads.global.set",
-          "deprecatedCommands": [
+            "max_uploads_global",
             "set_max_uploads_global"
           ],
           "description": "",
@@ -954,14 +863,7 @@
         {
           "command": "throttle.min_peers.normal.set",
           "deprecatedCommands": [
-            "min_peers"
-          ],
-          "description": "",
-          "type": "Command"
-        },
-        {
-          "command": "throttle.min_peers.normal.set",
-          "deprecatedCommands": [
+            "min_peers",
             "set_min_peers"
           ],
           "description": "",
@@ -970,14 +872,7 @@
         {
           "command": "throttle.min_peers.seed.set",
           "deprecatedCommands": [
-            "min_peers_seed"
-          ],
-          "description": "",
-          "type": "Command"
-        },
-        {
-          "command": "throttle.min_peers.seed.set",
-          "deprecatedCommands": [
+            "min_peers_seed",
             "set_min_peers_seed"
           ],
           "description": "",
@@ -1009,14 +904,7 @@
         {
           "command": "dht.port.set",
           "deprecatedCommands": [
-            "dht_port"
-          ],
-          "description": "",
-          "type": "Command"
-        },
-        {
-          "command": "dht.port.set",
-          "deprecatedCommands": [
+            "dht_port",
             "set_dht_port"
           ],
           "description": "",
@@ -1196,14 +1084,7 @@
         {
           "command": "network.bind_address.set",
           "deprecatedCommands": [
-            "bind"
-          ],
-          "description": "",
-          "type": "Command"
-        },
-        {
-          "command": "network.bind_address.set",
-          "deprecatedCommands": [
+            "bind",
             "set_bind"
           ],
           "description": "",
@@ -1212,14 +1093,7 @@
         {
           "command": "network.local_address.set",
           "deprecatedCommands": [
-            "ip"
-          ],
-          "description": "",
-          "type": "Command"
-        },
-        {
-          "command": "network.local_address.set",
-          "deprecatedCommands": [
+            "ip",
             "set_ip"
           ],
           "description": "",
@@ -1228,14 +1102,7 @@
         {
           "command": "network.http.capath.set",
           "deprecatedCommands": [
-            "http_capath"
-          ],
-          "description": "",
-          "type": "Command"
-        },
-        {
-          "command": "network.http.capath.set",
-          "deprecatedCommands": [
+            "http_capath",
             "set_http_capath"
           ],
           "description": "",
@@ -1244,14 +1111,7 @@
         {
           "command": "network.http.cacert.set",
           "deprecatedCommands": [
-            "http_cacert"
-          ],
-          "description": "",
-          "type": "Command"
-        },
-        {
-          "command": "network.http.cacert.set",
-          "deprecatedCommands": [
+            "http_cacert",
             "set_http_cacert"
           ],
           "description": "",
@@ -1268,14 +1128,7 @@
         {
           "command": "network.http.proxy_address.set",
           "deprecatedCommands": [
-            "http_proxy"
-          ],
-          "description": "",
-          "type": "Command"
-        },
-        {
-          "command": "network.http.proxy_address.set",
-          "deprecatedCommands": [
+            "http_proxy",
             "set_http_proxy"
           ],
           "description": "",
@@ -1292,14 +1145,7 @@
         {
           "command": "network.port_open.set",
           "deprecatedCommands": [
-            "port_open"
-          ],
-          "description": "",
-          "type": "Command"
-        },
-        {
-          "command": "network.port_open.set",
-          "deprecatedCommands": [
+            "port_open",
             "set_port_open"
           ],
           "description": "",
@@ -1308,14 +1154,7 @@
         {
           "command": "network.port_random.set",
           "deprecatedCommands": [
-            "port_random"
-          ],
-          "description": "",
-          "type": "Command"
-        },
-        {
-          "command": "network.port_random.set",
-          "deprecatedCommands": [
+            "port_random",
             "set_port_random"
           ],
           "description": "",
@@ -1324,14 +1163,7 @@
         {
           "command": "network.port_range.set",
           "deprecatedCommands": [
-            "port_range"
-          ],
-          "description": "",
-          "type": "Command"
-        },
-        {
-          "command": "network.port_range.set",
-          "deprecatedCommands": [
+            "port_range",
             "set_port_range"
           ],
           "description": "",
@@ -1340,14 +1172,7 @@
         {
           "command": "network.proxy_address.set",
           "deprecatedCommands": [
-            "proxy_address"
-          ],
-          "description": "",
-          "type": "Command"
-        },
-        {
-          "command": "network.proxy_address.set",
-          "deprecatedCommands": [
+            "proxy_address",
             "set_proxy_address"
           ],
           "description": "",
@@ -1396,14 +1221,7 @@
         {
           "command": "network.xmlrpc.dialect.set",
           "deprecatedCommands": [
-            "set_xmlrpc_dialect"
-          ],
-          "description": "",
-          "type": "Command"
-        },
-        {
-          "command": "network.xmlrpc.dialect.set",
-          "deprecatedCommands": [
+            "set_xmlrpc_dialect",
             "xmlrpc_dialect"
           ],
           "description": "",
@@ -1412,14 +1230,7 @@
         {
           "command": "network.xmlrpc.size_limit.set",
           "deprecatedCommands": [
-            "set_xmlrpc_size_limit"
-          ],
-          "description": "",
-          "type": "Command"
-        },
-        {
-          "command": "network.xmlrpc.size_limit.set",
-          "deprecatedCommands": [
+            "set_xmlrpc_size_limit",
             "xmlrpc_size_limit"
           ],
           "description": "",
@@ -1477,14 +1288,7 @@
         {
           "command": "session.path.set",
           "deprecatedCommands": [
-            "set_session"
-          ],
-          "description": "",
-          "type": "Command"
-        },
-        {
-          "command": "session.path.set",
-          "deprecatedCommands": [
+            "set_session",
             "session"
           ],
           "description": "",
@@ -1773,14 +1577,7 @@
         {
           "command": "trackers.numwant.set",
           "deprecatedCommands": [
-            "set_tracker_numwant"
-          ],
-          "description": "",
-          "type": "Command"
-        },
-        {
-          "command": "trackers.numwant.set",
-          "deprecatedCommands": [
+            "set_tracker_numwant",
             "tracker_numwant"
           ],
           "description": "",
@@ -1789,14 +1586,7 @@
         {
           "command": "trackers.use_udp.set",
           "deprecatedCommands": [
-            "set_use_udp_trackers"
-          ],
-          "description": "",
-          "type": "Command"
-        },
-        {
-          "command": "trackers.use_udp.set",
-          "deprecatedCommands": [
+            "set_use_udp_trackers",
             "use_udp_trackers"
           ],
           "description": "",
