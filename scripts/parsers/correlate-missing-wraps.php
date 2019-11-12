@@ -1,5 +1,7 @@
 <?php
 
+die("please use -v2.php".PHP_EOL);
+
 include "../../vendor/autoload.php";
 
 $BaseClassCommands = "\\Voltsonic\\rTorrent\\XMLRPC\\Commands\\";
