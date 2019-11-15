@@ -1,6 +1,11 @@
 <?php
 
-use Voltsonic\rTorrent\XMLRPC\Requests\SystemRequestXmlRpc;
+// This is a very basic tool that just looks at the parsed command list from
+// ./rakshasa-rtorrent-command-list-parser.js
+// and looks for the classes and functions based on the names.
+// it will attempt to create filler functions for you to paste but if parameters are required
+// you will need to add those in yourself.
+// _Get ending functions are variable read-only's so the TO-DO tag is not added.
 
 include "../../vendor/autoload.php";
 include "./correlate-missing-wraps-v2-functions.php";
@@ -11,9 +16,10 @@ $rTorrentCommands = json_decode(file_get_contents($rTorrentCommandsSrc), true);
 $tagPhp = '<?php';
 
 $createFuncTemplate_XMLRPC = function(&$appendTemplate, $cmdFunction, $classNameBase, $commandRaw){
+    $isGetFunc = preg_match('/_Get$/', $cmdFunction) === 1;
+    $todoAdd = $isGetFunc?'':(PHP_EOL.'        // TODO: verify parameters');
     $appendTemplate .= <<<EOL
-    public static function {$cmdFunction}(){
-        // TODO: verify parameters
+    public static function {$cmdFunction}(){{$todoAdd}
         return new {$classNameBase}(self::cmd('{$commandRaw}'));
     }
 
@@ -36,43 +42,6 @@ EOL
         ;
 };
 
-$createFuncTemplate_Api = function(&$appendTemplate, $cmdFunction, $classNameBase, $commandRaw){
-    $RequestClass = str_replace('ApiXmlRpc', 'RequestXmlRpc', $classNameBase);
-    $appendTemplate .= <<<EOL
-    /**
-     * @param callable \$callbackMethod
-     * @param bool \$disableStream
-     * @throws ErrorException
-     */
-    public function {$cmdFunction}(callable \$callbackMethod, \$disableStream = false){
-        // TODO: needs param verification.
-        \$this->runArray({$RequestClass}::{$cmdFunction}(), \$callbackMethod, \$disableStream);
-    }
-
-EOL;
-};
-$classBuilder_Api = function($namespace, $className, $commandPrefix, $groupKey) use($tagPhp) {
-    $classNameRequest = str_replace('ApiXmlRpc', 'RequestXmlRpc', $className);
-    $tagPhpNamespace = 'namespace '.trim($namespace, '\\').';';
-    $Uses = implode(PHP_EOL, [
-        'use ErrorException;',
-        'use Voltsonic\rTorrent\XMLRPC\Requests\\'.$classNameRequest.';'
-    ]);
-    return <<<EOL
--------------------------
-{$tagPhp}
-
-{$tagPhpNamespace}
-
-{$Uses}
-
-class {$className} extends __ApiXmlRpcAbstract {
-}
--------------------------
-
-EOL
-        ;
-};
 
 $ClassTemplates = [
     [
@@ -83,15 +52,6 @@ $ClassTemplates = [
         'classBuilder' => $classBuilder_XMLRPC,
         'base' => '\\Voltsonic\\rTorrent\\XMLRPC\\Requests\\',
         'class' => '__header__RequestXmlRpc'
-    ],
-    [
-        'callbacks' => [
-            'missingCommand' => $createFuncTemplate_Api,
-            'missingVariable' => $createFuncTemplate_Api
-        ],
-        'classBuilder' => $classBuilder_Api,
-        'base' => '\\Voltsonic\\rTorrent\\XMLRPC\\Api\\',
-        'class' => '__header__ApiXmlRpc'
     ],
 ];
 
