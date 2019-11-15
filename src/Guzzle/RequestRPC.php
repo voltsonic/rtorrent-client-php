@@ -131,23 +131,24 @@ class RequestRPC {
 
         // Test for errors
         $faultTest = $this->testForFault($method, $stream?$tmp:$Post, $stream);
-        if($faultTest instanceof ResponseRPC)
+        if($faultTest instanceof ResponseRPC){
+            $faultTest
+                ->setRequestMethod($method)
+                ->setRequestParams($params);
             return $faultTest;
+        }
 
-        return $stream
-            ?(new ResponseRPC())
-                ->setResponseJson([
+        return (new ResponseRPC())
+            ->setRequestMethod($method)
+            ->setRequestParams($params)
+            ->setResponseJson($stream
+                ?[
                     'type' => 'stream',
-                    'file' => $tmp,
-                    'method' => $method,
-                    'params' => $params
-                ])
-            :(new ResponseRPC())
-                ->setResponseJson([
+                    'file' => $tmp
+                ]
+                :[
                     'type' => 'full',
-                    'decoded' => xmlrpc_decode_request($faultTest, $method),
-                    'method' => $method,
-                    'params' => $params
+                    'decoded' => xmlrpc_decode_request($faultTest, $method)
                 ]);
     }
 
