@@ -13,7 +13,6 @@ class DirectoryRequestXmlRpc extends __RequestsXmlRpcAbstract {
 
     // Variables
     public static function default_Get(){
-        // TODO: verify parameters
         return new DirectoryRequestXmlRpc(self::cmd('default'));
     }
 }

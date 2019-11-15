@@ -50,19 +50,15 @@ class SystemRequestXmlRpc extends __RequestsXmlRpcAbstract {
 
     // Variables
     public static function file_Allocate_Get(){
-        // TODO: verify parameters
         return new SystemRequestXmlRpc(self::cmd('file.allocate'));
     }
     public static function file_MaxSize_Get(){
-        // TODO: verify parameters
         return new SystemRequestXmlRpc(self::cmd('file.max_size'));
     }
     public static function file_SplitSize_Get(){
-        // TODO: verify parameters
         return new SystemRequestXmlRpc(self::cmd('file.split_size'));
     }
     public static function file_SplitSuffix_Get(){
-        // TODO: verify parameters
         return new SystemRequestXmlRpc(self::cmd('file.split_suffix'));
     }
 }

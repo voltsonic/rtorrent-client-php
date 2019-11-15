@@ -17,11 +17,9 @@ class TrackerRequestXmlRpc extends __RequestsXmlRpcAbstract {
 
     // Variables
     public static function numwant_Get(){
-        // TODO: verify parameters
         return new TrackerRequestXmlRpc(self::cmd('numwant'));
     }
     public static function useUdp_Get(){
-        // TODO: verify parameters
         return new TrackerRequestXmlRpc(self::cmd('use_udp'));
     }
 }

@@ -25,15 +25,12 @@ class DhtRequestXmlRpc extends __RequestsXmlRpcAbstract {
 
     // Variables
     public static function port_Get(){
-        // TODO: verify parameters
         return new DhtRequestXmlRpc(self::cmd('port'));
     }
     public static function throttle_Name_Get(){
-        // TODO: verify parameters
         return new DhtRequestXmlRpc(self::cmd('throttle.name'));
     }
     public static function statistics_Get(){
-        // TODO: verify parameters
         return new DhtRequestXmlRpc(self::cmd('statistics'));
     }
 }

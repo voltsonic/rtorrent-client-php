@@ -25,15 +25,12 @@ class ProtocolRequestXmlRpc extends __RequestsXmlRpcAbstract {
 
     // Variables
     public static function connection_Leech_Get(){
-        // TODO: verify parameters
         return new ProtocolRequestXmlRpc(self::cmd('connection.leech'));
     }
     public static function connection_Seed_Get(){
-        // TODO: verify parameters
         return new ProtocolRequestXmlRpc(self::cmd('connection.seed'));
     }
     public static function pex_Get(){
-        // TODO: verify parameters
         return new ProtocolRequestXmlRpc(self::cmd('pex'));
     }
 }

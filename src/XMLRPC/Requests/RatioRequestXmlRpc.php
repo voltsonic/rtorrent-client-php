@@ -29,15 +29,12 @@ class RatioRequestXmlRpc extends __RequestsXmlRpcAbstract {
 
     // Variables
     public static function seeding_Ratio_Max_Get(){
-        // TODO: verify parameters
         return new RatioRequestXmlRpc(self::cmd('group2.seeding.ratio.max'));
     }
     public static function seeding_Ratio_Min_Get(){
-        // TODO: verify parameters
         return new RatioRequestXmlRpc(self::cmd('group2.seeding.ratio.min'));
     }
     public static function seeding_Ratio_Upload_Get(){
-        // TODO: verify parameters
         return new RatioRequestXmlRpc(self::cmd('group2.seeding.ratio.upload'));
     }
 }
