@@ -58,7 +58,7 @@ abstract class __rTorrentXmlRpcAbstract implements __rTorrentXmlRpcInterface {
     public function runArray(__RequestsXmlRpcInterface $req, callable $callbackMethod, $disableStream = false){
         return $this->run(function($item) use($callbackMethod) {
             $callbackMethod($item);
-        }, $req, ResponsesXmlRpcStatics::STANDARD_ARRAY, !$disableStream);
+        }, $req, $req, !$disableStream);
     }
 
     /**

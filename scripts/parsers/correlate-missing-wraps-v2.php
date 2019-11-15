@@ -66,7 +66,7 @@ $classBuilder_Api = function($namespace, $className, $commandPrefix, $groupKey) 
 
 {$Uses}
 
-class {$className} extends __rTorrentXmlRpcAbstract {
+class {$className} extends __ApiXmlRpcAbstract {
 }
 -------------------------
 
