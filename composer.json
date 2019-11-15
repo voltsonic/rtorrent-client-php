@@ -14,8 +14,16 @@
     "ext-simplexml": "*",
     "ext-xmlreader": "*",
     "ext-xmlrpc": "*",
+    "ext-http": "*",
+    "ext-raphf": "*",
+    "ext-propro": "*",
     "guzzlehttp/guzzle": "^6.4",
-    "vlucas/phpdotenv": "^3.6"
+    "vlucas/phpdotenv": "^3.6",
+    "halilim/xml-iterator": "^1.0",
+    "lstrojny/fxmlrpc": "^0.15.0",
+    "php-http/guzzle6-adapter": "^2.0",
+    "zendframework/zend-diactoros": "^2.2",
+    "php-http/message": "^1.8"
   },
   "autoload": {
     "psr-4": {
