@@ -50,8 +50,9 @@ abstract class  __RequestsXmlRpcAbstract implements __RequestsXmlRpcInterface {
 
     public function callParse(...$Parameters): void {
         if(!empty($this->callbackParsed))
-            foreach($this->callbackParsed as $cb)
+            foreach($this->callbackParsed as $cb){
                 $cb(...$Parameters);
+            }
     }
 
     /**
