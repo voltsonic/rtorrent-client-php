@@ -46,7 +46,7 @@ class rTorrentXMLRPC {
      */
     public function add(__RequestsXmlRpcInterface $requestXmlRpc, $multi = true): rTorrentXMLRPC {
         $this->requests[]= $requestXmlRpc;
-        $this->run();
+        if(!$multi) $this->run();
         return $this;
     }
 
@@ -64,6 +64,12 @@ class rTorrentXMLRPC {
         return $this;
     }
 
+    public function clear(): rTorrentXMLRPC {
+        $this->requests = [];
+        $this->requestErrors = [];
+        return $this;
+    }
+
     /**
      * @throws ErrorException
      */
@@ -73,11 +79,8 @@ class rTorrentXMLRPC {
 
         $isMulti = count($this->requests) > 1;
 
-        $runParse = function($item, $requestIndex = 0){
-            if(is_array($item))
-                $this->requests[$requestIndex]->callParse(...$item);
-            else
-                $this->requests[$requestIndex]->callParse($item);
+        $runParse = function($item, $requestIndex = 0) {
+            $this->requests[$requestIndex]->callParse($item);
         };
 
         if($isMulti){
@@ -99,6 +102,7 @@ class rTorrentXMLRPC {
                 });
 
             $Builder->execute();
+            $this->clear();
 
             return;
         }
@@ -111,5 +115,7 @@ class rTorrentXMLRPC {
         if(!empty($Response))
             foreach($Response as $item)
                 $runParse($item);
+
+        $this->clear();
     }
 }
