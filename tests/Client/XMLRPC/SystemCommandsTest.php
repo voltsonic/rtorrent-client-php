@@ -5,6 +5,7 @@ namespace VoltsonicTests\Client\XMLRPC;
 
 use ErrorException;
 use PHPUnit\Framework\TestCase;
+use Voltsonic\rTorrent\XMLRPC\Requests\SystemRequestXmlRpc;
 use VoltsonicTests\Traits\ClientBuilderTrait;
 use VoltsonicTests\Traits\ClientGenericResponsesTrait;
 use VoltsonicTests\Traits\ClientRebootTrait;
@@ -18,7 +19,15 @@ final class SystemCommandsTest extends TestCase {
      * @throws ErrorException
      */
     public function testShutdownQuick(){
-        $this->torrentClient()->commands_System->shutdown_Quick($this->responseCode($completeCode));
+        $this->torrentClient()
+            ->add(SystemRequestXmlRpc::shutdown_Quick()->addParse(function($aaa){
+                var_export($aaa);
+                die;
+            }))
+            ->run();
+        $this->torrentClient()
+            ->add(SystemRequestXmlRpc::shutdown_Quick()->addParse($this->responseCode($completeCode)))
+            ->run();
         $this->responseCodeAssert($completeCode);
         $this->torrentReboot();
     }
@@ -27,7 +36,8 @@ final class SystemCommandsTest extends TestCase {
      * @throws ErrorException
      */
     public function testShutdownNormal(){
-        $this->torrentClient()->commands_System->shutdown_Normal($this->responseCode($completeCode));
+        $this->torrentClient()
+            ->addSingle(SystemRequestXmlRpc::shutdown_Normal()->addParse($this->responseCode($completeCode)));
         $this->responseCodeAssert($completeCode);
         $this->torrentReboot();
     }
@@ -47,13 +57,14 @@ final class SystemCommandsTest extends TestCase {
         $ct = 0;
 
         $this->torrentClient()
-            ->commands_System
-            ->listMethods(function($command) use(&$ct, &$checkCommands) {
-                $checkCommands = array_filter($checkCommands, function($v) use($command) {
-                    return $command !== $v;
-                });
+            ->addSingle(SystemRequestXmlRpc::listMethods()->addParse(function($command) use(&$ct, &$checkCommands) {
+                if(!empty($checkCommands))
+                    $checkCommands = array_filter($checkCommands, function($v) use($command) {
+                        return $command !== $v;
+                    });
                 $ct++;
-            });
+            }));
+
         $this->assertGreaterThanOrEqual(846, $ct, 'Methods list is shorter then expected.');
         if(!empty($checkCommands))
             foreach($checkCommands as $command)
