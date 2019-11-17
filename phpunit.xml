@@ -1,6 +1,8 @@
 <phpunit bootstrap="bootstrap.php">
     <testsuites>
         <testsuite name="Master Tests">
+            <file>tests/Client/XMLRPC/SingleCommandsTest.php</file>
+            <file>tests/Client/XMLRPC/MultiCommandsTest.php</file>
             <file>tests/Client/XMLRPC/SystemCommandsTest.php</file>
         </testsuite>
     </testsuites>
