@@ -20,12 +20,6 @@ final class SystemCommandsTest extends TestCase {
      */
     public function testShutdownQuick(){
         $this->torrentClient()
-            ->add(SystemRequestXmlRpc::shutdown_Quick()->addParse(function($aaa){
-                var_export($aaa);
-                die;
-            }))
-            ->run();
-        $this->torrentClient()
             ->add(SystemRequestXmlRpc::shutdown_Quick()->addParse($this->responseCode($completeCode)))
             ->run();
         $this->responseCodeAssert($completeCode);
